@@ -178,6 +178,16 @@ class EventController extends Controller
             ->orderByDesc('created_at')
             ->get();
 
+        $pendingComments = $event->comments()
+            ->pending()
+            ->orderByDesc('created_at')
+            ->get();
+
+        $approvedComments = $event->comments()
+            ->approved()
+            ->orderByDesc('created_at')
+            ->get();
+
         return view('event.view', [
             'event' => $event,
             'venue' => $event->venue,
@@ -194,6 +204,8 @@ class EventController extends Controller
             'categoryName' => $categoryName,
             'sales' => $sales,
             'invites' => $event->invites()->latest()->get(),
+            'pendingComments' => $pendingComments,
+            'approvedComments' => $approvedComments,
         ]);
     }
 

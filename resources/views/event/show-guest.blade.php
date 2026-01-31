@@ -274,6 +274,100 @@
           </div>
           @endif
 
+          <div class="bg-[#F5F9FE] dark:bg-gray-800 rounded-lg px-5 py-8 sm:p-8 mb-6 flex flex-col gap-6 {{ $role->isRtl() ? 'rtl' : '' }}">
+            <div class="flex flex-col gap-2">
+              <h2 class="text-[#151B26] dark:text-gray-100 text-[32px] leading-snug font-semibold">
+                {{ __('messages.event_comments') }}
+              </h2>
+              <p class="text-sm text-[#33383C] dark:text-gray-300">
+                {{ __('messages.event_comments_public_help') }}
+              </p>
+            </div>
+
+            @if (session('comment_message'))
+              <div class="rounded-lg bg-green-50 px-4 py-3 text-sm text-green-700 dark:bg-green-900/30 dark:text-green-200">
+                {{ session('comment_message') }}
+              </div>
+            @endif
+
+            @if ($errors->any())
+              <div class="rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700 dark:bg-red-900/30 dark:text-red-200">
+                {{ __('messages.comment_submit_error') }}
+              </div>
+            @endif
+
+            <form method="POST" action="{{ route('event.comments.store', ['subdomain' => $role->subdomain, 'hash' => \App\Utils\UrlUtils::encodeId($event->id)]) }}" class="flex flex-col gap-4">
+              @csrf
+              <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div>
+                  <label for="comment_author_name" class="block text-sm font-medium text-gray-700 dark:text-gray-200">{{ __('messages.name') }}</label>
+                  <input id="comment_author_name"
+                         name="author_name"
+                         type="text"
+                         value="{{ old('author_name', auth()->user()?->name) }}"
+                         required
+                         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4E81FA] focus:ring-[#4E81FA] dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200">
+                </div>
+                <div>
+                  <label for="comment_author_email" class="block text-sm font-medium text-gray-700 dark:text-gray-200">{{ __('messages.email') }}</label>
+                  <input id="comment_author_email"
+                         name="author_email"
+                         type="email"
+                         value="{{ old('author_email', auth()->user()?->email) }}"
+                         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4E81FA] focus:ring-[#4E81FA] dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200">
+                </div>
+              </div>
+              <div>
+                <label for="comment_body" class="block text-sm font-medium text-gray-700 dark:text-gray-200">{{ __('messages.comment') }}</label>
+                <textarea id="comment_body"
+                          name="body"
+                          rows="4"
+                          required
+                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4E81FA] focus:ring-[#4E81FA] dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200">{{ old('body') }}</textarea>
+              </div>
+              <div>
+                <label for="comment_photo_url" class="block text-sm font-medium text-gray-700 dark:text-gray-200">{{ __('messages.photo_link') }}</label>
+                <input id="comment_photo_url"
+                       name="photo_url"
+                       type="url"
+                       value="{{ old('photo_url') }}"
+                       placeholder="https://"
+                       class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4E81FA] focus:ring-[#4E81FA] dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200">
+              </div>
+              <p class="text-xs text-gray-500 dark:text-gray-400">{{ __('messages.event_comments_pending_notice') }}</p>
+              <button type="submit" class="inline-flex w-fit items-center rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700">
+                {{ __('messages.submit_comment') }}
+              </button>
+            </form>
+
+            <div class="space-y-4">
+              @if ($approvedComments->isEmpty())
+                <p class="text-sm text-[#33383C] dark:text-gray-300">{{ __('messages.event_comments_empty') }}</p>
+              @else
+                @foreach ($approvedComments as $comment)
+                  <div class="rounded-lg bg-white p-4 shadow-sm dark:bg-gray-900">
+                    <div class="flex flex-wrap items-center justify-between gap-2 text-sm text-gray-600 dark:text-gray-300">
+                      <span class="font-semibold text-gray-900 dark:text-gray-100">{{ $comment->author_name }}</span>
+                      @if ($comment->created_at)
+                        <span>{{ $comment->created_at->locale(app()->getLocale())->translatedFormat('M j, Y') }}</span>
+                      @endif
+                    </div>
+                    <div class="mt-2 text-sm text-gray-700 dark:text-gray-200">
+                      {!! \App\Utils\UrlUtils::convertUrlsToLinks(e($comment->body)) !!}
+                    </div>
+                    @if ($comment->photo_url)
+                      <div class="mt-2 text-sm">
+                        <a href="{{ $comment->photo_url }}" target="_blank" class="text-blue-600 hover:underline dark:text-blue-400">
+                          {{ \App\Utils\UrlUtils::clean($comment->photo_url) }}
+                        </a>
+                      </div>
+                    @endif
+                  </div>
+                @endforeach
+              @endif
+            </div>
+          </div>
+
           @foreach ($event->members() as $each)
             @if (! $each->isClaimed() && ! $each->getFirstVideoUrl())
               @continue

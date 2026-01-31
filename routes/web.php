@@ -6,6 +6,7 @@ use App\Http\Controllers\EventTypeController;
 use App\Http\Controllers\RoleContactController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\EventCommentController;
 use App\Http\Controllers\GraphicController;
 use App\Http\Controllers\MediaLibraryController;
 use App\Http\Controllers\HomeController;
@@ -60,6 +61,7 @@ if (config('app.hosted')) {
         Route::get('/checkout/cancel/{sale_id}/{date}', [TicketController::class, 'cancel'])->name('checkout.cancel');
         Route::get('/payment/success/{sale_id}', [TicketController::class, 'paymentUrlSuccess'])->name('payment_url.success');
         Route::get('/payment/cancel/{sale_id}', [TicketController::class, 'paymentUrlCancel'])->name('payment_url.cancel');
+        Route::post('/event/{hash}/comments', [EventCommentController::class, 'store'])->name('event.comments.store');
         Route::get('/{slug}', [RoleController::class, 'viewGuest'])->name('event.view_guest');
         Route::post('/event/access/{hash}', [RoleController::class, 'eventAccess'])->name('event.access');
         Route::get('/invite/{token}', [RoleController::class, 'inviteAccess'])->name('event.invite');
@@ -127,6 +129,7 @@ Route::middleware(['auth', 'verified', 'active'])->group(function ()
     // Backwards-compatible named route expected by tests
     Route::get('/events/{hash}/view', [EventController::class, 'view'])->name('event.view');
     Route::post('/events/{hash}/invites', [EventController::class, 'sendInvites'])->name('event.invites.send');
+    Route::post('/events/{hash}/comments/{comment}/approve', [EventCommentController::class, 'approve'])->name('event.comments.approve');
     Route::get('/events/{hash}/sales/export/{format}', [TicketController::class, 'exportEventSales'])
         ->whereIn('format', ['csv', 'xlsx'])
         ->name('events.sales.export');
@@ -408,6 +411,7 @@ if (config('app.hosted')) {
     Route::get('/{subdomain}/checkout/cancel/{sale_id}', [TicketController::class, 'cancel'])->name('checkout.cancel');
     Route::get('/{subdomain}/payment/success/{sale_id}', [TicketController::class, 'paymentUrlSuccess'])->name('payment_url.success');
     Route::get('/{subdomain}/payment/cancel/{sale_id}', [TicketController::class, 'paymentUrlCancel'])->name('payment_url.cancel');
+    Route::post('/{subdomain}/event/{hash}/comments', [EventCommentController::class, 'store'])->name('event.comments.store');
     Route::get('/{subdomain}', [RoleController::class, 'viewGuest'])->name('role.view_guest');
     Route::get('/{subdomain}/{slug}', [RoleController::class, 'viewGuest'])->name('event.view_guest');
     Route::post('/{subdomain}/event/access/{hash}', [RoleController::class, 'eventAccess'])->name('event.access');

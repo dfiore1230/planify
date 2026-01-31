@@ -606,6 +606,86 @@
                 </div>
 
                 <div class="bg-white dark:bg-gray-800 shadow-sm sm:rounded-lg">
+                    <div class="px-6 py-5 space-y-4">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">{{ __('messages.event_comments') }}</h2>
+                            <span class="inline-flex items-center rounded-full bg-amber-50 px-2 py-1 text-xs font-medium text-amber-700 dark:bg-amber-900/30 dark:text-amber-200">
+                                {{ __('messages.pending') }}: {{ $pendingComments->count() }}
+                            </span>
+                        </div>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">{{ __('messages.event_comments_pending_help') }}</p>
+
+                        <div class="space-y-3">
+                            @forelse ($pendingComments as $comment)
+                                @php
+                                    $commentCreatedAt = $comment->created_at
+                                        ? $comment->created_at->copy()->timezone($timezone)->locale(app()->getLocale())->translatedFormat('M j, Y • g:i A')
+                                        : null;
+                                @endphp
+                                <div class="rounded-lg border border-gray-200 bg-gray-50 p-4 text-sm text-gray-700 dark:border-gray-700 dark:bg-gray-900/60 dark:text-gray-200">
+                                    <div class="flex flex-wrap items-center justify-between gap-2">
+                                        <div class="font-medium">{{ $comment->author_name }}</div>
+                                        <div class="text-xs text-gray-500 dark:text-gray-400">{{ $commentCreatedAt ?? __('messages.none') }}</div>
+                                    </div>
+                                    @if ($comment->author_email)
+                                        <div class="text-xs text-gray-500 dark:text-gray-400">{{ $comment->author_email }}</div>
+                                    @endif
+                                    <div class="mt-3">
+                                        {!! \App\Utils\UrlUtils::convertUrlsToLinks(e($comment->body)) !!}
+                                    </div>
+                                    @if ($comment->photo_url)
+                                        <div class="mt-2">
+                                            <a href="{{ $comment->photo_url }}" target="_blank" class="text-blue-600 hover:underline dark:text-blue-400">
+                                                {{ \App\Utils\UrlUtils::clean($comment->photo_url) }}
+                                            </a>
+                                        </div>
+                                    @endif
+                                    <form method="POST" action="{{ route('event.comments.approve', ['hash' => \App\Utils\UrlUtils::encodeId($event->id), 'comment' => $comment->id]) }}" class="mt-3">
+                                        @csrf
+                                        <x-primary-button>{{ __('messages.approve_comment') }}</x-primary-button>
+                                    </form>
+                                </div>
+                            @empty
+                                <p class="text-sm text-gray-600 dark:text-gray-300">{{ __('messages.event_comments_pending_empty') }}</p>
+                            @endforelse
+                        </div>
+
+                        <div class="pt-2">
+                            <h3 class="text-sm font-semibold text-gray-700 dark:text-gray-200">{{ __('messages.approved_comments') }}</h3>
+                            @if ($approvedComments->isEmpty())
+                                <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">{{ __('messages.event_comments_empty') }}</p>
+                            @else
+                                <div class="mt-3 space-y-3">
+                                    @foreach ($approvedComments as $comment)
+                                        @php
+                                            $commentCreatedAt = $comment->created_at
+                                                ? $comment->created_at->copy()->timezone($timezone)->locale(app()->getLocale())->translatedFormat('M j, Y • g:i A')
+                                                : null;
+                                        @endphp
+                                        <div class="rounded-lg bg-gray-50 p-3 text-sm text-gray-700 dark:bg-gray-900/60 dark:text-gray-200">
+                                            <div class="flex flex-wrap items-center justify-between gap-2">
+                                                <div class="font-medium">{{ $comment->author_name }}</div>
+                                                <div class="text-xs text-gray-500 dark:text-gray-400">{{ $commentCreatedAt ?? __('messages.none') }}</div>
+                                            </div>
+                                            <div class="mt-2">
+                                                {!! \App\Utils\UrlUtils::convertUrlsToLinks(e($comment->body)) !!}
+                                            </div>
+                                            @if ($comment->photo_url)
+                                                <div class="mt-2">
+                                                    <a href="{{ $comment->photo_url }}" target="_blank" class="text-blue-600 hover:underline dark:text-blue-400">
+                                                        {{ \App\Utils\UrlUtils::clean($comment->photo_url) }}
+                                                    </a>
+                                                </div>
+                                            @endif
+                                        </div>
+                                    @endforeach
+                                </div>
+                            @endif
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 shadow-sm sm:rounded-lg">
                     <div class="px-6 py-5">
                         <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">{{ __('messages.event_invites') }}</h2>
                         <form method="POST" action="{{ route('event.invites.send', ['hash' => \App\Utils\UrlUtils::encodeId($event->id)]) }}" class="mt-4">

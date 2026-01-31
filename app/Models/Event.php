@@ -211,6 +211,11 @@ class Event extends Model
     {
         return $this->hasOne(EventNotificationSetting::class);
     }
+
+    public function comments()
+    {
+        return $this->hasMany(EventComment::class);
+    }
     
     public function venue()
     {

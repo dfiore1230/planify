@@ -287,6 +287,7 @@ class RoleController extends Controller
         $event = null;
         $selectedGroup = null;
         $publicGuestList = collect();
+        $approvedComments = collect();
         $date = $request->date ? date('Y-m-d', strtotime($request->date)) : null;
 
         if ($date && $date != '1970-01-01') {
@@ -409,6 +410,11 @@ class RoleController extends Controller
                     ->orderByDesc('created_at')
                     ->get();
             }
+
+            $approvedComments = $event->comments()
+                ->approved()
+                ->orderByDesc('created_at')
+                ->get();
         }
 
         if (! $month) {
@@ -500,6 +506,7 @@ class RoleController extends Controller
             'translation',
             'selectedGroup',
             'publicGuestList',
+            'approvedComments',
         ));
 
 
