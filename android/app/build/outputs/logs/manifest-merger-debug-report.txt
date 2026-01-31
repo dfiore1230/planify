@@ -1,0 +1,653 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:1:1-23:12
+INJECTED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:1:1-23:12
+INJECTED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:1:1-23:12
+INJECTED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:1:1-23:12
+MERGED from [com.google.android.material:material:1.12.0] /Users/dfiore/.gradle/caches/8.13/transforms/c33dd5de804d23f7a635a15ad8f14b4d/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.camera:camera-video:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/a934eae8a5e8653dcddce6185250335c/transformed/camera-video-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.camera:camera-core:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/8e413708db43a66d38e084af367ede3e/transformed/camera-core-1.4.0/AndroidManifest.xml:17:1-36:12
+MERGED from [androidx.camera:camera-lifecycle:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/eb79734c7046453ddfd729311a43165e/transformed/camera-lifecycle-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.camera:camera-camera2:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/ccb24eb7194a0387b22b7a43c812e2d3/transformed/camera-camera2-1.4.0/AndroidManifest.xml:17:1-36:12
+MERGED from [androidx.camera:camera-view:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/421bdbd811f81713330a071c4af7dc5b/transformed/camera-view-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/dfiore/.gradle/caches/8.13/transforms/7c0a2d9ea9ebe4d601a37b612c88dc8c/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.mlkit:barcode-scanning:17.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/91a6c8ed47fefc265e5fdda7e5c4400b/transformed/barcode-scanning-17.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/8f78365f9e6f69b1d90101025371e71d/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/37b81d476aa48198a254a463d72f255d/transformed/barcode-scanning-common-17.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.mlkit:vision-common:17.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/34f2b9deaa9da7c4948373e3a06b5789/transformed/vision-common-17.3.0/AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.mlkit:common:18.11.0] /Users/dfiore/.gradle/caches/8.13/transforms/bf276d47e2c314bbf2de5993b1e0b8f6/transformed/common-18.11.0/AndroidManifest.xml:2:1-26:12
+MERGED from [io.coil-kt:coil-compose:2.7.0] /Users/dfiore/.gradle/caches/8.13/transforms/52021ba600564efb816b3fbb3d86b79a/transformed/coil-compose-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil-compose-base:2.7.0] /Users/dfiore/.gradle/caches/8.13/transforms/e0d66394f7827b25ed98bf38c504aabb/transformed/coil-compose-base-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil:2.7.0] /Users/dfiore/.gradle/caches/8.13/transforms/66007d80f8d4560537ab1d2dc4f3b3b7/transformed/coil-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil-base:2.7.0] /Users/dfiore/.gradle/caches/8.13/transforms/fa1df0421a0446417652f616d789fe42/transformed/coil-base-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/dfiore/.gradle/caches/8.13/transforms/dfb6bdcf82075227ca791e20ea36dfdc/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/dfiore/.gradle/caches/8.13/transforms/b0a0de9cfd9601dc3af5572b7cbe08e3/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/dfiore/.gradle/caches/8.13/transforms/e61c3312246ca654914356eebc4ed915/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/bc27fb80a0fa781300b0b2ab3b55acdb/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.5.0] /Users/dfiore/.gradle/caches/8.13/transforms/162b46cece402375f618a51ffeeda4b5/transformed/transition-1.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/2a0a89e77df44e020a2c295e4513e3b0/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/dfiore/.gradle/caches/8.13/transforms/4c992bdde4a5311d739132f601ce269f/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/dfiore/.gradle/caches/8.13/transforms/65a755de718e9fede9bfd82f7b6119c2/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/d35f4947f025ec9611bba76ba79d9ef4/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.8.2] /Users/dfiore/.gradle/caches/8.13/transforms/23bec754bf7c57482061442ca6be6344/transformed/navigation-common-2.8.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.8.2] /Users/dfiore/.gradle/caches/8.13/transforms/e85bacb8ac6ab0183f9ff546588d6dd0/transformed/navigation-runtime-2.8.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.8.2] /Users/dfiore/.gradle/caches/8.13/transforms/fa90706098ea3d13e3a5ec509f35bb98/transformed/navigation-common-ktx-2.8.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.8.2] /Users/dfiore/.gradle/caches/8.13/transforms/c0498383cb1813fa0f746f30429aff90/transformed/navigation-runtime-ktx-2.8.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-compose:2.8.2] /Users/dfiore/.gradle/caches/8.13/transforms/a7471f9bd9f314e328b6d79fa803a2eb/transformed/navigation-compose-2.8.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material3:material3-android:1.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/e5411c62713db60c78e96fd1b0c2084b/transformed/material3-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/712fdecf8f7d59a8ed674822eb15460b/transformed/material-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/f6e4d38960b02e9ffc47f17c8db592c8/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/dbc20ae85dadb2985d95552429f32b88/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/59170ff149a3a71d2dfef8006877107c/transformed/animation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/e1547941d229693c76614dfcbf639c4e/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/1724fa6e726ffe6ee3147a2ee3f2ae6b/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/78bc011578b3cccaeda30eb4b83a3b11/transformed/ui-tooling-data-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/b2fdef7353444b3777ab4c07aa025c6a/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/551bc28c6e28e3d3230c66782d13ea81/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/7fa19252cbf9a3ca2bab20c7332ce5db/transformed/ui-geometry-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/3a03d0fcb0099918cfaf7c30c24a6b21/transformed/ui-util-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/e9f05ba1d2f14a0813d742a57e7d5c6b/transformed/ui-text-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/48957428f75f17264e1a732c552ea672/transformed/ui-tooling-preview-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/cf44403ac02ed44dfb96d5b68514922c/transformed/ui-tooling-release/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/cb27a8796da3efa2b21e32fc20352701/transformed/ui-test-manifest-1.7.4/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/dfiore/.gradle/caches/8.13/transforms/84839f6528d26896856d57987a409e6d/transformed/play-services-base-18.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.mlkit:vision-interfaces:16.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/80fe2265540f0073d7b3c83ee7bf3d27/transformed/vision-interfaces-16.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/dfiore/.gradle/caches/8.13/transforms/318c7f1c12f1abb81fa82ceeaf6fb533/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/1173162cc0a6c66ec582a79201d375df/transformed/play-services-basement-18.4.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/dfiore/.gradle/caches/8.13/transforms/2e057c826cdbf5ba9dfb130dac2b15c0/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/dfiore/.gradle/caches/8.13/transforms/234dcefa3d9d6399355f7288807c4e26/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/dfiore/.gradle/caches/8.13/transforms/ab11dd14fbf08b9db342147cb6bffcc8/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/f7216992c7e944e5a80a35c846de8d16/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/39951e127a84b5ec16d32d41383b9cf6/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/dd1ed1ff44188bd6ae4702ec861a8ab2/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/41d50111dabf4c0c81cd2ae0c83dfea2/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/07a3fd064d2530d3c217675b73b087b7/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/6a941f2523255ab014636f1f41692752/transformed/lifecycle-livedata-core-ktx-2.8.6/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/1bb5bc45298cabfce0ec7391d17faf8b/transformed/lifecycle-viewmodel-2.8.6/AndroidManifest.xml:2:1-5:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/9abc14164d2225df4ed71fecdcb7f90c/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/922cf83d43de8e0626cbae47b61a389c/transformed/lifecycle-runtime-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/60f2f8280a4c07b4dadc2c0630ac85cb/transformed/lifecycle-livedata-core-2.8.6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/563ae486a55ca37afa10ced6024d6736/transformed/lifecycle-livedata-2.8.6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/dcdab06b02f9bbfd86cb50a0505dfb3e/transformed/lifecycle-viewmodel-ktx-2.8.6/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/fc096bae395544ab0074b81f30fa63aa/transformed/lifecycle-viewmodel-savedstate-2.8.6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/43f24cf90e38591b9a26de1c03526e88/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/157333aefd97a80bda0a07bb65aaf642/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/20b9c721db75dc960f145ba02abfb80d/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /Users/dfiore/.gradle/caches/8.13/transforms/7101faaa340460fd40c86699ef3f46ef/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.compose.material:material-icons-extended-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/043b163259fb62565e79fae236701ccb/transformed/material-icons-extended-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/66736d40a7f4c97ceafe1a53dba662c6/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/2bd2c0fe923ba42ec225c7a35ffd0ca4/transformed/ui-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-ktx:1.9.2] /Users/dfiore/.gradle/caches/8.13/transforms/eb5e5a2bd3255aeaadd3c31e70d37e04/transformed/activity-ktx-1.9.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-compose:1.9.2] /Users/dfiore/.gradle/caches/8.13/transforms/7fa5195321e6191db73463c289802f2e/transformed/activity-compose-1.9.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.9.2] /Users/dfiore/.gradle/caches/8.13/transforms/8c2de83ca32d5d1241da9e31f077797f/transformed/activity-1.9.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/dfiore/.gradle/caches/8.13/transforms/7942b8e94eb78e9f2b2a4b5b4034919d/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/abf9dc464ded43b9dbe235722298d3d7/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] /Users/dfiore/.gradle/caches/8.13/transforms/6df3ac8e2061f57937cbf552200e4484/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/591f8329aa5d9e3245c06211615a29aa/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/dfiore/.gradle/caches/8.13/transforms/4d86031e6c02bbe3218ca66b6874f8da/transformed/graphics-path-1.0.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core:1.13.1] /Users/dfiore/.gradle/caches/8.13/transforms/7fc580578ec00f2c3eda547284e04bb9/transformed/core-1.13.1/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/c556acb079e27ad8f7a3ed58e1ad7a59/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/dfiore/.gradle/caches/8.13/transforms/f40934820bf0d76151d090b8891177aa/transformed/core-ktx-1.13.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.datastore:datastore-core-android:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/179a9fafcfa1f741026336b5a604781c/transformed/datastore-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.datastore:datastore-android:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/9d88b767178acfc8594d0020a31583e2/transformed/datastore-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/b34160d11c4c741e8beffac44cebf6bf/transformed/datastore-preferences-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/1d03eaa88591731a5eb85bfa84a082b7/transformed/runtime-saveable-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/191cc1eca8ad3cfd8e9975d65963638a/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/33818b94a36506e4661f46652d193cb4/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/dfiore/.gradle/caches/8.13/transforms/0cb3c8c78f45a589dac377d90fc0b4a0/transformed/tracing-1.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing-ktx:1.2.0] /Users/dfiore/.gradle/caches/8.13/transforms/54e325c6a80ffceaf4ee548d598fd2ec/transformed/tracing-ktx-1.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/dfiore/.gradle/caches/8.13/transforms/b8382b757303b7131d6a543bc2015d13/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.security:security-crypto:1.1.0-alpha06] /Users/dfiore/.gradle/caches/8.13/transforms/3e6e24f3c0df3f3acffd7c877ea9ad60/transformed/security-crypto-1.1.0-alpha06/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/bb148223bd33c1b2ab1dba44a0473484/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/7046b7005cd95b03059ad443ad06c8c2/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/4793784280eabe1da87ba87fb9ff22fa/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/1adebf11a0829b42391775bde51e0e91/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/dfiore/.gradle/caches/8.13/transforms/040d0b3d7f9129afb6e2da31126574ad/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/dfiore/.gradle/caches/8.13/transforms/9be4e04336055996b0bdc20e7daf22bd/transformed/transport-runtime-2.2.6/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] /Users/dfiore/.gradle/caches/8.13/transforms/c16afc4afe738b04f31bb99571791a1b/transformed/transport-api-2.2.1/AndroidManifest.xml:15:1-22:12
+MERGED from [com.google.firebase:firebase-components:16.1.0] /Users/dfiore/.gradle/caches/8.13/transforms/528dbbbb2edf44da56178bcd696d5dd2/transformed/firebase-components-16.1.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /Users/dfiore/.gradle/caches/8.13/transforms/3a591024be5240e53aed093917d4a840/transformed/firebase-encoders-json-17.1.0/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/f881680f9b8fe5bbc76b70cb678ce16e/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/ee4de02a8d7c9543069e7582e7c37f0c/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/a3361759b56b6e24c2b0523e127690b5/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /Users/dfiore/.gradle/caches/8.13/transforms/76feb1e220e84e5fd8e50b1dc30de86d/transformed/exifinterface-1.3.7/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/dfiore/.gradle/caches/8.13/transforms/a07412bb071dfb97940e78b494b6ac4b/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/dfiore/.gradle/caches/8.13/transforms/53c5dba2714422be7ecabdbd71b8e9e9/transformed/image-1.0.0-beta1/AndroidManifest.xml:2:1-9:12
+	package
+		INJECTED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:2:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/dfiore/.gradle/caches/8.13/transforms/040d0b3d7f9129afb6e2da31126574ad/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/dfiore/.gradle/caches/8.13/transforms/040d0b3d7f9129afb6e2da31126574ad/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:2:22-64
+uses-permission#android.permission.CAMERA
+ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:3:5-65
+	android:name
+		ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:3:22-62
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:4:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/dfiore/.gradle/caches/8.13/transforms/040d0b3d7f9129afb6e2da31126574ad/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/dfiore/.gradle/caches/8.13/transforms/040d0b3d7f9129afb6e2da31126574ad/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/dfiore/.gradle/caches/8.13/transforms/9be4e04336055996b0bdc20e7daf22bd/transformed/transport-runtime-2.2.6/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/dfiore/.gradle/caches/8.13/transforms/9be4e04336055996b0bdc20e7daf22bd/transformed/transport-runtime-2.2.6/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:4:22-76
+application
+ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:6:5-22:19
+INJECTED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:6:5-22:19
+MERGED from [com.google.android.material:material:1.12.0] /Users/dfiore/.gradle/caches/8.13/transforms/c33dd5de804d23f7a635a15ad8f14b4d/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.12.0] /Users/dfiore/.gradle/caches/8.13/transforms/c33dd5de804d23f7a635a15ad8f14b4d/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.camera:camera-core:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/8e413708db43a66d38e084af367ede3e/transformed/camera-core-1.4.0/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-core:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/8e413708db43a66d38e084af367ede3e/transformed/camera-core-1.4.0/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-camera2:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/ccb24eb7194a0387b22b7a43c812e2d3/transformed/camera-camera2-1.4.0/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-camera2:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/ccb24eb7194a0387b22b7a43c812e2d3/transformed/camera-camera2-1.4.0/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/dfiore/.gradle/caches/8.13/transforms/7c0a2d9ea9ebe4d601a37b612c88dc8c/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/dfiore/.gradle/caches/8.13/transforms/7c0a2d9ea9ebe4d601a37b612c88dc8c/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/8f78365f9e6f69b1d90101025371e71d/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/8f78365f9e6f69b1d90101025371e71d/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.mlkit:vision-common:17.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/34f2b9deaa9da7c4948373e3a06b5789/transformed/vision-common-17.3.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.mlkit:vision-common:17.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/34f2b9deaa9da7c4948373e3a06b5789/transformed/vision-common-17.3.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.mlkit:common:18.11.0] /Users/dfiore/.gradle/caches/8.13/transforms/bf276d47e2c314bbf2de5993b1e0b8f6/transformed/common-18.11.0/AndroidManifest.xml:8:5-24:19
+MERGED from [com.google.mlkit:common:18.11.0] /Users/dfiore/.gradle/caches/8.13/transforms/bf276d47e2c314bbf2de5993b1e0b8f6/transformed/common-18.11.0/AndroidManifest.xml:8:5-24:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/cf44403ac02ed44dfb96d5b68514922c/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/cf44403ac02ed44dfb96d5b68514922c/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/cb27a8796da3efa2b21e32fc20352701/transformed/ui-test-manifest-1.7.4/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/cb27a8796da3efa2b21e32fc20352701/transformed/ui-test-manifest-1.7.4/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/dfiore/.gradle/caches/8.13/transforms/84839f6528d26896856d57987a409e6d/transformed/play-services-base-18.5.0/AndroidManifest.xml:4:5-6:19
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/dfiore/.gradle/caches/8.13/transforms/84839f6528d26896856d57987a409e6d/transformed/play-services-base-18.5.0/AndroidManifest.xml:4:5-6:19
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/dfiore/.gradle/caches/8.13/transforms/318c7f1c12f1abb81fa82ceeaf6fb533/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/dfiore/.gradle/caches/8.13/transforms/318c7f1c12f1abb81fa82ceeaf6fb533/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/1173162cc0a6c66ec582a79201d375df/transformed/play-services-basement-18.4.0/AndroidManifest.xml:5:5-7:19
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/1173162cc0a6c66ec582a79201d375df/transformed/play-services-basement-18.4.0/AndroidManifest.xml:5:5-7:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/41d50111dabf4c0c81cd2ae0c83dfea2/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/41d50111dabf4c0c81cd2ae0c83dfea2/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/07a3fd064d2530d3c217675b73b087b7/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/07a3fd064d2530d3c217675b73b087b7/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.13.1] /Users/dfiore/.gradle/caches/8.13/transforms/7fc580578ec00f2c3eda547284e04bb9/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.1] /Users/dfiore/.gradle/caches/8.13/transforms/7fc580578ec00f2c3eda547284e04bb9/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/33818b94a36506e4661f46652d193cb4/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/33818b94a36506e4661f46652d193cb4/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/bb148223bd33c1b2ab1dba44a0473484/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/bb148223bd33c1b2ab1dba44a0473484/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/dfiore/.gradle/caches/8.13/transforms/040d0b3d7f9129afb6e2da31126574ad/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/dfiore/.gradle/caches/8.13/transforms/040d0b3d7f9129afb6e2da31126574ad/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/dfiore/.gradle/caches/8.13/transforms/9be4e04336055996b0bdc20e7daf22bd/transformed/transport-runtime-2.2.6/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/dfiore/.gradle/caches/8.13/transforms/9be4e04336055996b0bdc20e7daf22bd/transformed/transport-runtime-2.2.6/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/dfiore/.gradle/caches/8.13/transforms/53c5dba2714422be7ecabdbd71b8e9e9/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/dfiore/.gradle/caches/8.13/transforms/53c5dba2714422be7ecabdbd71b8e9e9/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
+	android:extractNativeLibs
+		INJECTED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.13.1] /Users/dfiore/.gradle/caches/8.13/transforms/7fc580578ec00f2c3eda547284e04bb9/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:9:9-41
+	android:roundIcon
+		ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:13:9-45
+	android:name
+		ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:7:9-43
+activity#com.planify.app.MainActivity
+ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:14:9-21:20
+	android:exported
+		ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:16:13-36
+	android:name
+		ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:15:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:17:13-20:29
+action#android.intent.action.MAIN
+ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml:19:27-74
+uses-sdk
+INJECTED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.12.0] /Users/dfiore/.gradle/caches/8.13/transforms/c33dd5de804d23f7a635a15ad8f14b4d/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.12.0] /Users/dfiore/.gradle/caches/8.13/transforms/c33dd5de804d23f7a635a15ad8f14b4d/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.camera:camera-video:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/a934eae8a5e8653dcddce6185250335c/transformed/camera-video-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-video:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/a934eae8a5e8653dcddce6185250335c/transformed/camera-video-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-core:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/8e413708db43a66d38e084af367ede3e/transformed/camera-core-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-core:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/8e413708db43a66d38e084af367ede3e/transformed/camera-core-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-lifecycle:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/eb79734c7046453ddfd729311a43165e/transformed/camera-lifecycle-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-lifecycle:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/eb79734c7046453ddfd729311a43165e/transformed/camera-lifecycle-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-camera2:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/ccb24eb7194a0387b22b7a43c812e2d3/transformed/camera-camera2-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-camera2:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/ccb24eb7194a0387b22b7a43c812e2d3/transformed/camera-camera2-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-view:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/421bdbd811f81713330a071c4af7dc5b/transformed/camera-view-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-view:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/421bdbd811f81713330a071c4af7dc5b/transformed/camera-view-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/dfiore/.gradle/caches/8.13/transforms/7c0a2d9ea9ebe4d601a37b612c88dc8c/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/dfiore/.gradle/caches/8.13/transforms/7c0a2d9ea9ebe4d601a37b612c88dc8c/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.mlkit:barcode-scanning:17.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/91a6c8ed47fefc265e5fdda7e5c4400b/transformed/barcode-scanning-17.3.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.mlkit:barcode-scanning:17.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/91a6c8ed47fefc265e5fdda7e5c4400b/transformed/barcode-scanning-17.3.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/8f78365f9e6f69b1d90101025371e71d/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/8f78365f9e6f69b1d90101025371e71d/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/37b81d476aa48198a254a463d72f255d/transformed/barcode-scanning-common-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/37b81d476aa48198a254a463d72f255d/transformed/barcode-scanning-common-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.mlkit:vision-common:17.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/34f2b9deaa9da7c4948373e3a06b5789/transformed/vision-common-17.3.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:vision-common:17.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/34f2b9deaa9da7c4948373e3a06b5789/transformed/vision-common-17.3.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:common:18.11.0] /Users/dfiore/.gradle/caches/8.13/transforms/bf276d47e2c314bbf2de5993b1e0b8f6/transformed/common-18.11.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:common:18.11.0] /Users/dfiore/.gradle/caches/8.13/transforms/bf276d47e2c314bbf2de5993b1e0b8f6/transformed/common-18.11.0/AndroidManifest.xml:6:5-44
+MERGED from [io.coil-kt:coil-compose:2.7.0] /Users/dfiore/.gradle/caches/8.13/transforms/52021ba600564efb816b3fbb3d86b79a/transformed/coil-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose:2.7.0] /Users/dfiore/.gradle/caches/8.13/transforms/52021ba600564efb816b3fbb3d86b79a/transformed/coil-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose-base:2.7.0] /Users/dfiore/.gradle/caches/8.13/transforms/e0d66394f7827b25ed98bf38c504aabb/transformed/coil-compose-base-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose-base:2.7.0] /Users/dfiore/.gradle/caches/8.13/transforms/e0d66394f7827b25ed98bf38c504aabb/transformed/coil-compose-base-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil:2.7.0] /Users/dfiore/.gradle/caches/8.13/transforms/66007d80f8d4560537ab1d2dc4f3b3b7/transformed/coil-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil:2.7.0] /Users/dfiore/.gradle/caches/8.13/transforms/66007d80f8d4560537ab1d2dc4f3b3b7/transformed/coil-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-base:2.7.0] /Users/dfiore/.gradle/caches/8.13/transforms/fa1df0421a0446417652f616d789fe42/transformed/coil-base-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-base:2.7.0] /Users/dfiore/.gradle/caches/8.13/transforms/fa1df0421a0446417652f616d789fe42/transformed/coil-base-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/dfiore/.gradle/caches/8.13/transforms/dfb6bdcf82075227ca791e20ea36dfdc/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/dfiore/.gradle/caches/8.13/transforms/dfb6bdcf82075227ca791e20ea36dfdc/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/dfiore/.gradle/caches/8.13/transforms/b0a0de9cfd9601dc3af5572b7cbe08e3/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/dfiore/.gradle/caches/8.13/transforms/b0a0de9cfd9601dc3af5572b7cbe08e3/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/dfiore/.gradle/caches/8.13/transforms/e61c3312246ca654914356eebc4ed915/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/dfiore/.gradle/caches/8.13/transforms/e61c3312246ca654914356eebc4ed915/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/bc27fb80a0fa781300b0b2ab3b55acdb/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/bc27fb80a0fa781300b0b2ab3b55acdb/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.5.0] /Users/dfiore/.gradle/caches/8.13/transforms/162b46cece402375f618a51ffeeda4b5/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.5.0] /Users/dfiore/.gradle/caches/8.13/transforms/162b46cece402375f618a51ffeeda4b5/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/2a0a89e77df44e020a2c295e4513e3b0/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/2a0a89e77df44e020a2c295e4513e3b0/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/dfiore/.gradle/caches/8.13/transforms/4c992bdde4a5311d739132f601ce269f/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/dfiore/.gradle/caches/8.13/transforms/4c992bdde4a5311d739132f601ce269f/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/dfiore/.gradle/caches/8.13/transforms/65a755de718e9fede9bfd82f7b6119c2/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/dfiore/.gradle/caches/8.13/transforms/65a755de718e9fede9bfd82f7b6119c2/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/d35f4947f025ec9611bba76ba79d9ef4/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/d35f4947f025ec9611bba76ba79d9ef4/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.8.2] /Users/dfiore/.gradle/caches/8.13/transforms/23bec754bf7c57482061442ca6be6344/transformed/navigation-common-2.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.8.2] /Users/dfiore/.gradle/caches/8.13/transforms/23bec754bf7c57482061442ca6be6344/transformed/navigation-common-2.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.8.2] /Users/dfiore/.gradle/caches/8.13/transforms/e85bacb8ac6ab0183f9ff546588d6dd0/transformed/navigation-runtime-2.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.8.2] /Users/dfiore/.gradle/caches/8.13/transforms/e85bacb8ac6ab0183f9ff546588d6dd0/transformed/navigation-runtime-2.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.8.2] /Users/dfiore/.gradle/caches/8.13/transforms/fa90706098ea3d13e3a5ec509f35bb98/transformed/navigation-common-ktx-2.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.8.2] /Users/dfiore/.gradle/caches/8.13/transforms/fa90706098ea3d13e3a5ec509f35bb98/transformed/navigation-common-ktx-2.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.8.2] /Users/dfiore/.gradle/caches/8.13/transforms/c0498383cb1813fa0f746f30429aff90/transformed/navigation-runtime-ktx-2.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.8.2] /Users/dfiore/.gradle/caches/8.13/transforms/c0498383cb1813fa0f746f30429aff90/transformed/navigation-runtime-ktx-2.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.8.2] /Users/dfiore/.gradle/caches/8.13/transforms/a7471f9bd9f314e328b6d79fa803a2eb/transformed/navigation-compose-2.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.8.2] /Users/dfiore/.gradle/caches/8.13/transforms/a7471f9bd9f314e328b6d79fa803a2eb/transformed/navigation-compose-2.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material3:material3-android:1.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/e5411c62713db60c78e96fd1b0c2084b/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3-android:1.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/e5411c62713db60c78e96fd1b0c2084b/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/712fdecf8f7d59a8ed674822eb15460b/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/712fdecf8f7d59a8ed674822eb15460b/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/f6e4d38960b02e9ffc47f17c8db592c8/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/f6e4d38960b02e9ffc47f17c8db592c8/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/dbc20ae85dadb2985d95552429f32b88/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/dbc20ae85dadb2985d95552429f32b88/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/59170ff149a3a71d2dfef8006877107c/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/59170ff149a3a71d2dfef8006877107c/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/e1547941d229693c76614dfcbf639c4e/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/e1547941d229693c76614dfcbf639c4e/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/1724fa6e726ffe6ee3147a2ee3f2ae6b/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/1724fa6e726ffe6ee3147a2ee3f2ae6b/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/78bc011578b3cccaeda30eb4b83a3b11/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/78bc011578b3cccaeda30eb4b83a3b11/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/b2fdef7353444b3777ab4c07aa025c6a/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/b2fdef7353444b3777ab4c07aa025c6a/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/551bc28c6e28e3d3230c66782d13ea81/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/551bc28c6e28e3d3230c66782d13ea81/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/7fa19252cbf9a3ca2bab20c7332ce5db/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/7fa19252cbf9a3ca2bab20c7332ce5db/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/3a03d0fcb0099918cfaf7c30c24a6b21/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/3a03d0fcb0099918cfaf7c30c24a6b21/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/e9f05ba1d2f14a0813d742a57e7d5c6b/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/e9f05ba1d2f14a0813d742a57e7d5c6b/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/48957428f75f17264e1a732c552ea672/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/48957428f75f17264e1a732c552ea672/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/cf44403ac02ed44dfb96d5b68514922c/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/cf44403ac02ed44dfb96d5b68514922c/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/cb27a8796da3efa2b21e32fc20352701/transformed/ui-test-manifest-1.7.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/cb27a8796da3efa2b21e32fc20352701/transformed/ui-test-manifest-1.7.4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/dfiore/.gradle/caches/8.13/transforms/84839f6528d26896856d57987a409e6d/transformed/play-services-base-18.5.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/dfiore/.gradle/caches/8.13/transforms/84839f6528d26896856d57987a409e6d/transformed/play-services-base-18.5.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.mlkit:vision-interfaces:16.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/80fe2265540f0073d7b3c83ee7bf3d27/transformed/vision-interfaces-16.3.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.mlkit:vision-interfaces:16.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/80fe2265540f0073d7b3c83ee7bf3d27/transformed/vision-interfaces-16.3.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/dfiore/.gradle/caches/8.13/transforms/318c7f1c12f1abb81fa82ceeaf6fb533/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/dfiore/.gradle/caches/8.13/transforms/318c7f1c12f1abb81fa82ceeaf6fb533/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/1173162cc0a6c66ec582a79201d375df/transformed/play-services-basement-18.4.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/1173162cc0a6c66ec582a79201d375df/transformed/play-services-basement-18.4.0/AndroidManifest.xml:3:5-44
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/dfiore/.gradle/caches/8.13/transforms/2e057c826cdbf5ba9dfb130dac2b15c0/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/dfiore/.gradle/caches/8.13/transforms/2e057c826cdbf5ba9dfb130dac2b15c0/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/dfiore/.gradle/caches/8.13/transforms/234dcefa3d9d6399355f7288807c4e26/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/dfiore/.gradle/caches/8.13/transforms/234dcefa3d9d6399355f7288807c4e26/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/dfiore/.gradle/caches/8.13/transforms/ab11dd14fbf08b9db342147cb6bffcc8/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/dfiore/.gradle/caches/8.13/transforms/ab11dd14fbf08b9db342147cb6bffcc8/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/f7216992c7e944e5a80a35c846de8d16/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/f7216992c7e944e5a80a35c846de8d16/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/39951e127a84b5ec16d32d41383b9cf6/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/39951e127a84b5ec16d32d41383b9cf6/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/dd1ed1ff44188bd6ae4702ec861a8ab2/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/dd1ed1ff44188bd6ae4702ec861a8ab2/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/41d50111dabf4c0c81cd2ae0c83dfea2/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/41d50111dabf4c0c81cd2ae0c83dfea2/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/07a3fd064d2530d3c217675b73b087b7/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/07a3fd064d2530d3c217675b73b087b7/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/6a941f2523255ab014636f1f41692752/transformed/lifecycle-livedata-core-ktx-2.8.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/6a941f2523255ab014636f1f41692752/transformed/lifecycle-livedata-core-ktx-2.8.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/1bb5bc45298cabfce0ec7391d17faf8b/transformed/lifecycle-viewmodel-2.8.6/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/1bb5bc45298cabfce0ec7391d17faf8b/transformed/lifecycle-viewmodel-2.8.6/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/9abc14164d2225df4ed71fecdcb7f90c/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/9abc14164d2225df4ed71fecdcb7f90c/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/922cf83d43de8e0626cbae47b61a389c/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/922cf83d43de8e0626cbae47b61a389c/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/60f2f8280a4c07b4dadc2c0630ac85cb/transformed/lifecycle-livedata-core-2.8.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/60f2f8280a4c07b4dadc2c0630ac85cb/transformed/lifecycle-livedata-core-2.8.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/563ae486a55ca37afa10ced6024d6736/transformed/lifecycle-livedata-2.8.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/563ae486a55ca37afa10ced6024d6736/transformed/lifecycle-livedata-2.8.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/dcdab06b02f9bbfd86cb50a0505dfb3e/transformed/lifecycle-viewmodel-ktx-2.8.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/dcdab06b02f9bbfd86cb50a0505dfb3e/transformed/lifecycle-viewmodel-ktx-2.8.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/fc096bae395544ab0074b81f30fa63aa/transformed/lifecycle-viewmodel-savedstate-2.8.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/fc096bae395544ab0074b81f30fa63aa/transformed/lifecycle-viewmodel-savedstate-2.8.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/43f24cf90e38591b9a26de1c03526e88/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/43f24cf90e38591b9a26de1c03526e88/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/157333aefd97a80bda0a07bb65aaf642/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/157333aefd97a80bda0a07bb65aaf642/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/20b9c721db75dc960f145ba02abfb80d/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/20b9c721db75dc960f145ba02abfb80d/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /Users/dfiore/.gradle/caches/8.13/transforms/7101faaa340460fd40c86699ef3f46ef/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /Users/dfiore/.gradle/caches/8.13/transforms/7101faaa340460fd40c86699ef3f46ef/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/043b163259fb62565e79fae236701ccb/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/043b163259fb62565e79fae236701ccb/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/66736d40a7f4c97ceafe1a53dba662c6/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/66736d40a7f4c97ceafe1a53dba662c6/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/2bd2c0fe923ba42ec225c7a35ffd0ca4/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/2bd2c0fe923ba42ec225c7a35ffd0ca4/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.2] /Users/dfiore/.gradle/caches/8.13/transforms/eb5e5a2bd3255aeaadd3c31e70d37e04/transformed/activity-ktx-1.9.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.2] /Users/dfiore/.gradle/caches/8.13/transforms/eb5e5a2bd3255aeaadd3c31e70d37e04/transformed/activity-ktx-1.9.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.9.2] /Users/dfiore/.gradle/caches/8.13/transforms/7fa5195321e6191db73463c289802f2e/transformed/activity-compose-1.9.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.9.2] /Users/dfiore/.gradle/caches/8.13/transforms/7fa5195321e6191db73463c289802f2e/transformed/activity-compose-1.9.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.9.2] /Users/dfiore/.gradle/caches/8.13/transforms/8c2de83ca32d5d1241da9e31f077797f/transformed/activity-1.9.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.9.2] /Users/dfiore/.gradle/caches/8.13/transforms/8c2de83ca32d5d1241da9e31f077797f/transformed/activity-1.9.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/dfiore/.gradle/caches/8.13/transforms/7942b8e94eb78e9f2b2a4b5b4034919d/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/dfiore/.gradle/caches/8.13/transforms/7942b8e94eb78e9f2b2a4b5b4034919d/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/abf9dc464ded43b9dbe235722298d3d7/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/abf9dc464ded43b9dbe235722298d3d7/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] /Users/dfiore/.gradle/caches/8.13/transforms/6df3ac8e2061f57937cbf552200e4484/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/dfiore/.gradle/caches/8.13/transforms/6df3ac8e2061f57937cbf552200e4484/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/591f8329aa5d9e3245c06211615a29aa/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/591f8329aa5d9e3245c06211615a29aa/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/dfiore/.gradle/caches/8.13/transforms/4d86031e6c02bbe3218ca66b6874f8da/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/dfiore/.gradle/caches/8.13/transforms/4d86031e6c02bbe3218ca66b6874f8da/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core:1.13.1] /Users/dfiore/.gradle/caches/8.13/transforms/7fc580578ec00f2c3eda547284e04bb9/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] /Users/dfiore/.gradle/caches/8.13/transforms/7fc580578ec00f2c3eda547284e04bb9/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/c556acb079e27ad8f7a3ed58e1ad7a59/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/c556acb079e27ad8f7a3ed58e1ad7a59/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/dfiore/.gradle/caches/8.13/transforms/f40934820bf0d76151d090b8891177aa/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/dfiore/.gradle/caches/8.13/transforms/f40934820bf0d76151d090b8891177aa/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-core-android:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/179a9fafcfa1f741026336b5a604781c/transformed/datastore-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-core-android:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/179a9fafcfa1f741026336b5a604781c/transformed/datastore-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-android:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/9d88b767178acfc8594d0020a31583e2/transformed/datastore-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-android:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/9d88b767178acfc8594d0020a31583e2/transformed/datastore-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/b34160d11c4c741e8beffac44cebf6bf/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/b34160d11c4c741e8beffac44cebf6bf/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/1d03eaa88591731a5eb85bfa84a082b7/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/1d03eaa88591731a5eb85bfa84a082b7/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/191cc1eca8ad3cfd8e9975d65963638a/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/191cc1eca8ad3cfd8e9975d65963638a/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/33818b94a36506e4661f46652d193cb4/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/33818b94a36506e4661f46652d193cb4/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/dfiore/.gradle/caches/8.13/transforms/0cb3c8c78f45a589dac377d90fc0b4a0/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/dfiore/.gradle/caches/8.13/transforms/0cb3c8c78f45a589dac377d90fc0b4a0/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing-ktx:1.2.0] /Users/dfiore/.gradle/caches/8.13/transforms/54e325c6a80ffceaf4ee548d598fd2ec/transformed/tracing-ktx-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing-ktx:1.2.0] /Users/dfiore/.gradle/caches/8.13/transforms/54e325c6a80ffceaf4ee548d598fd2ec/transformed/tracing-ktx-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/dfiore/.gradle/caches/8.13/transforms/b8382b757303b7131d6a543bc2015d13/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/dfiore/.gradle/caches/8.13/transforms/b8382b757303b7131d6a543bc2015d13/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.security:security-crypto:1.1.0-alpha06] /Users/dfiore/.gradle/caches/8.13/transforms/3e6e24f3c0df3f3acffd7c877ea9ad60/transformed/security-crypto-1.1.0-alpha06/AndroidManifest.xml:20:5-44
+MERGED from [androidx.security:security-crypto:1.1.0-alpha06] /Users/dfiore/.gradle/caches/8.13/transforms/3e6e24f3c0df3f3acffd7c877ea9ad60/transformed/security-crypto-1.1.0-alpha06/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/bb148223bd33c1b2ab1dba44a0473484/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/bb148223bd33c1b2ab1dba44a0473484/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/7046b7005cd95b03059ad443ad06c8c2/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/7046b7005cd95b03059ad443ad06c8c2/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/4793784280eabe1da87ba87fb9ff22fa/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/4793784280eabe1da87ba87fb9ff22fa/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/1adebf11a0829b42391775bde51e0e91/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/1adebf11a0829b42391775bde51e0e91/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/dfiore/.gradle/caches/8.13/transforms/040d0b3d7f9129afb6e2da31126574ad/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/dfiore/.gradle/caches/8.13/transforms/040d0b3d7f9129afb6e2da31126574ad/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/dfiore/.gradle/caches/8.13/transforms/9be4e04336055996b0bdc20e7daf22bd/transformed/transport-runtime-2.2.6/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/dfiore/.gradle/caches/8.13/transforms/9be4e04336055996b0bdc20e7daf22bd/transformed/transport-runtime-2.2.6/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] /Users/dfiore/.gradle/caches/8.13/transforms/c16afc4afe738b04f31bb99571791a1b/transformed/transport-api-2.2.1/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] /Users/dfiore/.gradle/caches/8.13/transforms/c16afc4afe738b04f31bb99571791a1b/transformed/transport-api-2.2.1/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-components:16.1.0] /Users/dfiore/.gradle/caches/8.13/transforms/528dbbbb2edf44da56178bcd696d5dd2/transformed/firebase-components-16.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.1.0] /Users/dfiore/.gradle/caches/8.13/transforms/528dbbbb2edf44da56178bcd696d5dd2/transformed/firebase-components-16.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /Users/dfiore/.gradle/caches/8.13/transforms/3a591024be5240e53aed093917d4a840/transformed/firebase-encoders-json-17.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /Users/dfiore/.gradle/caches/8.13/transforms/3a591024be5240e53aed093917d4a840/transformed/firebase-encoders-json-17.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/f881680f9b8fe5bbc76b70cb678ce16e/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/f881680f9b8fe5bbc76b70cb678ce16e/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/ee4de02a8d7c9543069e7582e7c37f0c/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/ee4de02a8d7c9543069e7582e7c37f0c/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/a3361759b56b6e24c2b0523e127690b5/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/dfiore/.gradle/caches/8.13/transforms/a3361759b56b6e24c2b0523e127690b5/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /Users/dfiore/.gradle/caches/8.13/transforms/76feb1e220e84e5fd8e50b1dc30de86d/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /Users/dfiore/.gradle/caches/8.13/transforms/76feb1e220e84e5fd8e50b1dc30de86d/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/dfiore/.gradle/caches/8.13/transforms/a07412bb071dfb97940e78b494b6ac4b/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/dfiore/.gradle/caches/8.13/transforms/a07412bb071dfb97940e78b494b6ac4b/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/dfiore/.gradle/caches/8.13/transforms/53c5dba2714422be7ecabdbd71b8e9e9/transformed/image-1.0.0-beta1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/dfiore/.gradle/caches/8.13/transforms/53c5dba2714422be7ecabdbd71b8e9e9/transformed/image-1.0.0-beta1/AndroidManifest.xml:5:5-44
+	android:targetSdkVersion
+		INJECTED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/dfiore/Documents/GitHub/planify/android/app/src/main/AndroidManifest.xml
+service#androidx.camera.core.impl.MetadataHolderService
+ADDED from [androidx.camera:camera-core:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/8e413708db43a66d38e084af367ede3e/transformed/camera-core-1.4.0/AndroidManifest.xml:29:9-33:78
+MERGED from [androidx.camera:camera-camera2:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/ccb24eb7194a0387b22b7a43c812e2d3/transformed/camera-camera2-1.4.0/AndroidManifest.xml:24:9-33:19
+MERGED from [androidx.camera:camera-camera2:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/ccb24eb7194a0387b22b7a43c812e2d3/transformed/camera-camera2-1.4.0/AndroidManifest.xml:24:9-33:19
+	android:enabled
+		ADDED from [androidx.camera:camera-core:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/8e413708db43a66d38e084af367ede3e/transformed/camera-core-1.4.0/AndroidManifest.xml:31:13-36
+	android:exported
+		ADDED from [androidx.camera:camera-core:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/8e413708db43a66d38e084af367ede3e/transformed/camera-core-1.4.0/AndroidManifest.xml:32:13-37
+	tools:ignore
+		ADDED from [androidx.camera:camera-core:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/8e413708db43a66d38e084af367ede3e/transformed/camera-core-1.4.0/AndroidManifest.xml:33:13-75
+	android:name
+		ADDED from [androidx.camera:camera-core:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/8e413708db43a66d38e084af367ede3e/transformed/camera-core-1.4.0/AndroidManifest.xml:30:13-75
+meta-data#androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER
+ADDED from [androidx.camera:camera-camera2:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/ccb24eb7194a0387b22b7a43c812e2d3/transformed/camera-camera2-1.4.0/AndroidManifest.xml:30:13-32:89
+	android:value
+		ADDED from [androidx.camera:camera-camera2:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/ccb24eb7194a0387b22b7a43c812e2d3/transformed/camera-camera2-1.4.0/AndroidManifest.xml:32:17-86
+	android:name
+		ADDED from [androidx.camera:camera-camera2:1.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/ccb24eb7194a0387b22b7a43c812e2d3/transformed/camera-camera2-1.4.0/AndroidManifest.xml:31:17-103
+service#com.google.mlkit.common.internal.MlKitComponentDiscoveryService
+ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/8f78365f9e6f69b1d90101025371e71d/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:vision-common:17.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/34f2b9deaa9da7c4948373e3a06b5789/transformed/vision-common-17.3.0/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:vision-common:17.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/34f2b9deaa9da7c4948373e3a06b5789/transformed/vision-common-17.3.0/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:common:18.11.0] /Users/dfiore/.gradle/caches/8.13/transforms/bf276d47e2c314bbf2de5993b1e0b8f6/transformed/common-18.11.0/AndroidManifest.xml:15:9-23:19
+MERGED from [com.google.mlkit:common:18.11.0] /Users/dfiore/.gradle/caches/8.13/transforms/bf276d47e2c314bbf2de5993b1e0b8f6/transformed/common-18.11.0/AndroidManifest.xml:15:9-23:19
+	android:exported
+		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/8f78365f9e6f69b1d90101025371e71d/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:11:13-37
+	tools:targetApi
+		ADDED from [com.google.mlkit:common:18.11.0] /Users/dfiore/.gradle/caches/8.13/transforms/bf276d47e2c314bbf2de5993b1e0b8f6/transformed/common-18.11.0/AndroidManifest.xml:19:13-32
+	android:directBootAware
+		ADDED from [com.google.mlkit:common:18.11.0] /Users/dfiore/.gradle/caches/8.13/transforms/bf276d47e2c314bbf2de5993b1e0b8f6/transformed/common-18.11.0/AndroidManifest.xml:17:13-43
+	android:name
+		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/8f78365f9e6f69b1d90101025371e71d/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:10:13-91
+meta-data#com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar
+ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/8f78365f9e6f69b1d90101025371e71d/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/8f78365f9e6f69b1d90101025371e71d/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/8f78365f9e6f69b1d90101025371e71d/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:13:17-120
+meta-data#com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar
+ADDED from [com.google.mlkit:vision-common:17.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/34f2b9deaa9da7c4948373e3a06b5789/transformed/vision-common-17.3.0/AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.mlkit:vision-common:17.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/34f2b9deaa9da7c4948373e3a06b5789/transformed/vision-common-17.3.0/AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.mlkit:vision-common:17.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/34f2b9deaa9da7c4948373e3a06b5789/transformed/vision-common-17.3.0/AndroidManifest.xml:13:17-124
+provider#com.google.mlkit.common.internal.MlKitInitProvider
+ADDED from [com.google.mlkit:common:18.11.0] /Users/dfiore/.gradle/caches/8.13/transforms/bf276d47e2c314bbf2de5993b1e0b8f6/transformed/common-18.11.0/AndroidManifest.xml:9:9-13:38
+	android:authorities
+		ADDED from [com.google.mlkit:common:18.11.0] /Users/dfiore/.gradle/caches/8.13/transforms/bf276d47e2c314bbf2de5993b1e0b8f6/transformed/common-18.11.0/AndroidManifest.xml:11:13-69
+	android:exported
+		ADDED from [com.google.mlkit:common:18.11.0] /Users/dfiore/.gradle/caches/8.13/transforms/bf276d47e2c314bbf2de5993b1e0b8f6/transformed/common-18.11.0/AndroidManifest.xml:12:13-37
+	android:initOrder
+		ADDED from [com.google.mlkit:common:18.11.0] /Users/dfiore/.gradle/caches/8.13/transforms/bf276d47e2c314bbf2de5993b1e0b8f6/transformed/common-18.11.0/AndroidManifest.xml:13:13-35
+	android:name
+		ADDED from [com.google.mlkit:common:18.11.0] /Users/dfiore/.gradle/caches/8.13/transforms/bf276d47e2c314bbf2de5993b1e0b8f6/transformed/common-18.11.0/AndroidManifest.xml:10:13-78
+meta-data#com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar
+ADDED from [com.google.mlkit:common:18.11.0] /Users/dfiore/.gradle/caches/8.13/transforms/bf276d47e2c314bbf2de5993b1e0b8f6/transformed/common-18.11.0/AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.mlkit:common:18.11.0] /Users/dfiore/.gradle/caches/8.13/transforms/bf276d47e2c314bbf2de5993b1e0b8f6/transformed/common-18.11.0/AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.mlkit:common:18.11.0] /Users/dfiore/.gradle/caches/8.13/transforms/bf276d47e2c314bbf2de5993b1e0b8f6/transformed/common-18.11.0/AndroidManifest.xml:21:17-120
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/cf44403ac02ed44dfb96d5b68514922c/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/cf44403ac02ed44dfb96d5b68514922c/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/cf44403ac02ed44dfb96d5b68514922c/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+activity#androidx.activity.ComponentActivity
+ADDED from [androidx.compose.ui:ui-test-manifest:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/cb27a8796da3efa2b21e32fc20352701/transformed/ui-test-manifest-1.7.4/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/cb27a8796da3efa2b21e32fc20352701/transformed/ui-test-manifest-1.7.4/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.7.4] /Users/dfiore/.gradle/caches/8.13/transforms/cb27a8796da3efa2b21e32fc20352701/transformed/ui-test-manifest-1.7.4/AndroidManifest.xml:24:13-63
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.5.0] /Users/dfiore/.gradle/caches/8.13/transforms/84839f6528d26896856d57987a409e6d/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.5.0] /Users/dfiore/.gradle/caches/8.13/transforms/84839f6528d26896856d57987a409e6d/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.5.0] /Users/dfiore/.gradle/caches/8.13/transforms/84839f6528d26896856d57987a409e6d/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.5.0] /Users/dfiore/.gradle/caches/8.13/transforms/84839f6528d26896856d57987a409e6d/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/1173162cc0a6c66ec582a79201d375df/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/1173162cc0a6c66ec582a79201d375df/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.4.0] /Users/dfiore/.gradle/caches/8.13/transforms/1173162cc0a6c66ec582a79201d375df/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/41d50111dabf4c0c81cd2ae0c83dfea2/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/07a3fd064d2530d3c217675b73b087b7/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/07a3fd064d2530d3c217675b73b087b7/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/33818b94a36506e4661f46652d193cb4/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/dfiore/.gradle/caches/8.13/transforms/33818b94a36506e4661f46652d193cb4/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/41d50111dabf4c0c81cd2ae0c83dfea2/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/41d50111dabf4c0c81cd2ae0c83dfea2/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/41d50111dabf4c0c81cd2ae0c83dfea2/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/41d50111dabf4c0c81cd2ae0c83dfea2/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/41d50111dabf4c0c81cd2ae0c83dfea2/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/41d50111dabf4c0c81cd2ae0c83dfea2/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/dfiore/.gradle/caches/8.13/transforms/41d50111dabf4c0c81cd2ae0c83dfea2/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/07a3fd064d2530d3c217675b73b087b7/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/07a3fd064d2530d3c217675b73b087b7/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.6] /Users/dfiore/.gradle/caches/8.13/transforms/07a3fd064d2530d3c217675b73b087b7/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:30:17-78
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/dfiore/.gradle/caches/8.13/transforms/7fc580578ec00f2c3eda547284e04bb9/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /Users/dfiore/.gradle/caches/8.13/transforms/7fc580578ec00f2c3eda547284e04bb9/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/dfiore/.gradle/caches/8.13/transforms/7fc580578ec00f2c3eda547284e04bb9/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+permission#com.planify.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/dfiore/.gradle/caches/8.13/transforms/7fc580578ec00f2c3eda547284e04bb9/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /Users/dfiore/.gradle/caches/8.13/transforms/7fc580578ec00f2c3eda547284e04bb9/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/dfiore/.gradle/caches/8.13/transforms/7fc580578ec00f2c3eda547284e04bb9/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/dfiore/.gradle/caches/8.13/transforms/7fc580578ec00f2c3eda547284e04bb9/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/dfiore/.gradle/caches/8.13/transforms/7fc580578ec00f2c3eda547284e04bb9/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+uses-permission#com.planify.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/dfiore/.gradle/caches/8.13/transforms/7fc580578ec00f2c3eda547284e04bb9/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/dfiore/.gradle/caches/8.13/transforms/7fc580578ec00f2c3eda547284e04bb9/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/dfiore/.gradle/caches/8.13/transforms/de49761fc80714adc9d1d55a574ae7e5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/dfiore/.gradle/caches/8.13/transforms/040d0b3d7f9129afb6e2da31126574ad/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/dfiore/.gradle/caches/8.13/transforms/9be4e04336055996b0bdc20e7daf22bd/transformed/transport-runtime-2.2.6/AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/dfiore/.gradle/caches/8.13/transforms/9be4e04336055996b0bdc20e7daf22bd/transformed/transport-runtime-2.2.6/AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/dfiore/.gradle/caches/8.13/transforms/040d0b3d7f9129afb6e2da31126574ad/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/dfiore/.gradle/caches/8.13/transforms/040d0b3d7f9129afb6e2da31126574ad/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/dfiore/.gradle/caches/8.13/transforms/040d0b3d7f9129afb6e2da31126574ad/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/dfiore/.gradle/caches/8.13/transforms/040d0b3d7f9129afb6e2da31126574ad/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/dfiore/.gradle/caches/8.13/transforms/040d0b3d7f9129afb6e2da31126574ad/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/dfiore/.gradle/caches/8.13/transforms/9be4e04336055996b0bdc20e7daf22bd/transformed/transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/dfiore/.gradle/caches/8.13/transforms/9be4e04336055996b0bdc20e7daf22bd/transformed/transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/dfiore/.gradle/caches/8.13/transforms/9be4e04336055996b0bdc20e7daf22bd/transformed/transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/dfiore/.gradle/caches/8.13/transforms/9be4e04336055996b0bdc20e7daf22bd/transformed/transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/dfiore/.gradle/caches/8.13/transforms/9be4e04336055996b0bdc20e7daf22bd/transformed/transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/dfiore/.gradle/caches/8.13/transforms/9be4e04336055996b0bdc20e7daf22bd/transformed/transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/dfiore/.gradle/caches/8.13/transforms/9be4e04336055996b0bdc20e7daf22bd/transformed/transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
