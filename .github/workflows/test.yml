@@ -125,5 +125,5 @@ jobs:
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: dusk-screenshots-${{ github.job }}
+          name: dusk-screenshots-${{ github.job }}-${{ strategy.job-index }}-${{ github.run_id }}
           path: tests/legacy/Browser/screenshots
