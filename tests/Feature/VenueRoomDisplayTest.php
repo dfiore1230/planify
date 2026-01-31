@@ -103,7 +103,7 @@ class VenueRoomDisplayTest extends TestCase
         $response->assertStatus(200);
         // Should not have an extra line for room since it's not set
         $content = $response->getContent();
-        $this->assertStringNotContainsString('text-gray-500 dark:text-gray-400', $content);
+        $this->assertStringNotContainsString('bg-blue-50 px-4 py-2 text-base font-semibold text-blue-700', $content);
     }
 
     public function test_translated_venue_room_displays()
