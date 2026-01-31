@@ -124,7 +124,7 @@ jobs:
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: dusk-screenshots
+          name: dusk-screenshots-${{ github.job }}
           path: tests/legacy/Browser/screenshots
 
       - name: Headless Chrome capture of /login (fallback PNG)
@@ -162,7 +162,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: dusk-screenshots
+          name: dusk-screenshots-${{ github.job }}
           path: tests/legacy/Browser/screenshots
 
 
