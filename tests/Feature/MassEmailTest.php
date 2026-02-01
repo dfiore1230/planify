@@ -78,7 +78,7 @@ class MassEmailTest extends TestCase
         $url = URL::temporarySignedRoute('public.confirm', now()->addMinutes(10), [
             'subscriber' => $subscriber->id,
             'list' => $list->id,
-        ]);
+        ], false);
 
         $response = $this->get($url);
         $response->assertStatus(200);
@@ -100,7 +100,7 @@ class MassEmailTest extends TestCase
             'subscriber' => $subscriber->id,
             'list' => $list->id,
             'scope' => 'list',
-        ]);
+        ], false);
 
         $response = $this->get($url);
         $response->assertStatus(200);
