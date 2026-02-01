@@ -11,6 +11,7 @@ use App\Utils\UrlUtils;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
 
 class EventCommentPendingNotification extends Notification
@@ -43,7 +44,13 @@ class EventCommentPendingNotification extends Notification
     {
         $eventName = NotificationUtils::eventDisplayName($this->event);
         $eventHash = UrlUtils::encodeId($this->event->id);
-        $reviewUrl = route('events.view', ['hash' => $eventHash]);
+        if (Route::has('events.view')) {
+            $reviewUrl = route('events.view', ['hash' => $eventHash]);
+        } elseif (Route::has('event.view')) {
+            $reviewUrl = route('event.view', ['hash' => $eventHash]);
+        } else {
+            $reviewUrl = url('/events/' . $eventHash . '/view');
+        }
         $commentPreview = Str::limit($this->comment->body, 160);
 
         $mail = (new MailMessage())

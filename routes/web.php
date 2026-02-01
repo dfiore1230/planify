@@ -90,10 +90,10 @@ Route::get('/public/subscribe', [PublicEmailSignupController::class, 'show'])->n
 Route::get('/public/subscribe/event/{hash}', [PublicEmailSignupController::class, 'show'])->name('public.subscribe.event');
 Route::get('/public/confirm', [PublicEmailSubscriptionController::class, 'confirm'])
     ->name('public.confirm')
-    ->middleware('signed');
+    ->middleware('signed:relative');
 Route::get('/public/unsubscribe', [PublicEmailSubscriptionController::class, 'unsubscribe'])
     ->name('public.unsubscribe')
-    ->middleware('signed');
+    ->middleware('signed:relative');
 Route::get('/.well-known/planify.json', [DiscoveryController::class, 'manifest'])
     ->name('well_known.planify');
 Route::get('/branding.json', [DiscoveryController::class, 'branding'])
