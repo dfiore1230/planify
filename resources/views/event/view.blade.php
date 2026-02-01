@@ -640,10 +640,18 @@
                                             </a>
                                         </div>
                                     @endif
-                                    <form method="POST" action="{{ route('event.comments.approve', ['hash' => \App\Utils\UrlUtils::encodeId($event->id), 'comment' => $comment->id]) }}" class="mt-3">
-                                        @csrf
-                                        <x-primary-button>{{ __('messages.approve_comment') }}</x-primary-button>
-                                    </form>
+                                    <div class="mt-3 flex flex-wrap gap-2">
+                                        <form method="POST" action="{{ route('event.comments.approve', ['hash' => \App\Utils\UrlUtils::encodeId($event->id), 'comment' => $comment->id]) }}">
+                                            @csrf
+                                            <x-primary-button>{{ __('messages.approve_comment') }}</x-primary-button>
+                                        </form>
+                                        <form method="POST" action="{{ route('event.comments.reject', ['hash' => \App\Utils\UrlUtils::encodeId($event->id), 'comment' => $comment->id]) }}">
+                                            @csrf
+                                            <button type="submit" class="inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 transition-colors duration-150 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700">
+                                                {{ __('messages.reject_comment') }}
+                                            </button>
+                                        </form>
+                                    </div>
                                 </div>
                             @empty
                                 <p class="text-sm text-gray-600 dark:text-gray-300">{{ __('messages.event_comments_pending_empty') }}</p>
@@ -677,6 +685,12 @@
                                                     </a>
                                                 </div>
                                             @endif
+                                            <form method="POST" action="{{ route('event.comments.delete', ['hash' => \App\Utils\UrlUtils::encodeId($event->id), 'comment' => $comment->id]) }}" class="mt-3">
+                                                @csrf
+                                                <button type="submit" class="inline-flex items-center rounded-md border border-red-200 bg-red-50 px-3 py-1.5 text-xs font-medium text-red-700 hover:bg-red-100 transition-colors duration-150 dark:border-red-800 dark:bg-red-900/30 dark:text-red-200 dark:hover:bg-red-900/50">
+                                                    {{ __('messages.delete_comment') }}
+                                                </button>
+                                            </form>
                                         </div>
                                     @endforeach
                                 </div>

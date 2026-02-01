@@ -87,6 +87,46 @@ class EventCommentController extends Controller
         return redirect()->back()->with('message', __('messages.comment_approved'));
     }
 
+    public function reject(Request $request, string $hash, EventComment $comment)
+    {
+        $eventId = UrlUtils::decodeId($hash);
+        $event = Event::with('roles')->findOrFail($eventId);
+
+        if ($comment->event_id !== $event->id) {
+            abort(404);
+        }
+
+        $user = $request->user();
+
+        if (! $user || (! $user->canEditEvent($event) && ! $user->isAdmin())) {
+            return redirect()->back()->with('error', __('messages.not_authorized'));
+        }
+
+        $comment->delete();
+
+        return redirect()->back()->with('message', __('messages.comment_rejected'));
+    }
+
+    public function destroy(Request $request, string $hash, EventComment $comment)
+    {
+        $eventId = UrlUtils::decodeId($hash);
+        $event = Event::with('roles')->findOrFail($eventId);
+
+        if ($comment->event_id !== $event->id) {
+            abort(404);
+        }
+
+        $user = $request->user();
+
+        if (! $user || (! $user->canEditEvent($event) && ! $user->isAdmin())) {
+            return redirect()->back()->with('error', __('messages.not_authorized'));
+        }
+
+        $comment->delete();
+
+        return redirect()->back()->with('message', __('messages.comment_deleted'));
+    }
+
     private function eventMatchesRole(Event $event, Role $role): bool
     {
         if ($event->roles->contains('id', $role->id)) {

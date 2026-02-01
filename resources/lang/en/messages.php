@@ -1115,9 +1115,13 @@ return [
     'comment_submitted_pending' => 'Thanks! Your comment is pending approval.',
     'comment_approved' => 'Comment approved.',
     'comment_already_approved' => 'That comment is already approved.',
+    'comment_rejected' => 'Comment rejected.',
+    'comment_deleted' => 'Comment deleted.',
     'review_comments' => 'Review comments',
     'event_comment_pending_subject' => 'New comment pending approval for :event',
     'event_comment_pending_intro' => 'A new comment was submitted for :event and needs approval.',
     'event_comment_pending_from' => 'Submitted by :name',
     'event_comment_pending_photo' => 'Photo link: :url',
+    'reject_comment' => 'Reject comment',
+    'delete_comment' => 'Delete comment',
 ];

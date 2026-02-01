@@ -329,7 +329,7 @@ class SendEmailCampaignJob implements ShouldQueue
             'subscriber' => $subscriberId,
             'list' => $listId,
             'scope' => 'list',
-        ]);
+        ], false);
     }
 
     private function buildUnsubscribeAllUrl(int $subscriberId): string
@@ -339,7 +339,7 @@ class SendEmailCampaignJob implements ShouldQueue
         return URL::temporarySignedRoute('public.unsubscribe', now()->addMinutes($ttlMinutes), [
             'subscriber' => $subscriberId,
             'scope' => 'all',
-        ]);
+        ], false);
     }
 
     private function ensureUnsubscribeFooter(

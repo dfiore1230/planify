@@ -130,6 +130,8 @@ Route::middleware(['auth', 'verified', 'active'])->group(function ()
     Route::get('/events/{hash}/view', [EventController::class, 'view'])->name('event.view');
     Route::post('/events/{hash}/invites', [EventController::class, 'sendInvites'])->name('event.invites.send');
     Route::post('/events/{hash}/comments/{comment}/approve', [EventCommentController::class, 'approve'])->name('event.comments.approve');
+    Route::post('/events/{hash}/comments/{comment}/reject', [EventCommentController::class, 'reject'])->name('event.comments.reject');
+    Route::post('/events/{hash}/comments/{comment}/delete', [EventCommentController::class, 'destroy'])->name('event.comments.delete');
     Route::get('/events/{hash}/sales/export/{format}', [TicketController::class, 'exportEventSales'])
         ->whereIn('format', ['csv', 'xlsx'])
         ->name('events.sales.export');

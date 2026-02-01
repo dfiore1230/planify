@@ -863,4 +863,9 @@ return [
     'event_comment_pending_intro' => 'A new comment was submitted for :event and needs approval.',
     'event_comment_pending_from' => 'Submitted by :name',
     'event_comment_pending_photo' => 'Photo link: :url',
+
+    'comment_rejected' => 'Comment rejected.',
+    'comment_deleted' => 'Comment deleted.',
+    'reject_comment' => 'Reject comment',
+    'delete_comment' => 'Delete comment',
 ];

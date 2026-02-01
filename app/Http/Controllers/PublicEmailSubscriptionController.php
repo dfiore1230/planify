@@ -163,6 +163,6 @@ class PublicEmailSubscriptionController extends Controller
         return URL::temporarySignedRoute('public.confirm', now()->addMinutes($ttlMinutes), [
             'subscriber' => $subscriber->getKey(),
             'list' => $list->getKey(),
-        ]);
+        ], false);
     }
 }
