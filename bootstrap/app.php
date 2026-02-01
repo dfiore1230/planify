@@ -15,6 +15,7 @@ use App\Http\Middleware\SetUserLanguage;
 use App\Http\Middleware\EnsureEmailIsVerified;
 use App\Http\Middleware\EnsureUserIsActive;
 use App\Http\Middleware\HandleBotTraffic;
+use App\Http\Middleware\LogSignedUrlDiagnostics;
 use App\Http\Middleware\SecurityHeaders;
 use App\Http\Middleware\ApiAuthentication;
 use App\Http\Middleware\EnsureAbility;
@@ -36,6 +37,7 @@ return Application::configure(basePath: dirname(__DIR__))
             'api.auth' => ApiAuthentication::class,
             'ability' => EnsureAbility::class,
             'active' => EnsureUserIsActive::class,
+            'signed.debug' => LogSignedUrlDiagnostics::class,
         ]);
 
         $middleware->validateCsrfTokens(except: [
