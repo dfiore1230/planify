@@ -403,5 +403,8 @@
 
     @include('layouts.partials.planify-footer')
 
+    @stack('image-picker-scripts')
+    @stack('scripts')
+
 </body>
 </html>

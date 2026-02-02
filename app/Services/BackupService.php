@@ -28,7 +28,7 @@ class BackupService
         return $backups;
     }
 
-    public function createBackup(): array
+    public function createBackup(?int $retentionDays = null): array
     {
         $dir = $this->ensureBackupDir();
         $timestamp = Carbon::now('UTC')->format('Ymd-His');
@@ -47,7 +47,38 @@ class BackupService
         $this->createBundleArchive($workDir, $backupFile);
         $this->cleanupDir($workDir);
 
+        if ($retentionDays) {
+            $this->pruneBackupsOlderThan($retentionDays);
+        }
+
         return $this->buildBackupMeta($backupFile);
+    }
+
+    public function pruneBackupsOlderThan(int $days): int
+    {
+        if ($days <= 0) {
+            return 0;
+        }
+
+        $dir = $this->ensureBackupDir();
+        $files = glob($dir . '/*.tar.gz') ?: [];
+        $cutoff = Carbon::now('UTC')->subDays($days)->getTimestamp();
+        $removed = 0;
+
+        foreach ($files as $file) {
+            if (! is_file($file)) {
+                continue;
+            }
+
+            $modified = filemtime($file) ?: 0;
+            if ($modified && $modified < $cutoff) {
+                if (@unlink($file)) {
+                    $removed++;
+                }
+            }
+        }
+
+        return $removed;
     }
 
     public function storeUploadedBackup(UploadedFile $file): array

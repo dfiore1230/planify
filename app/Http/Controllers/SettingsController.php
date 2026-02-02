@@ -1932,7 +1932,30 @@ class SettingsController extends Controller
 
         return view('settings.backups', [
             'backups' => $service->listBackups(),
+            'backupSettings' => \App\Models\Setting::forGroup('backups'),
         ]);
+    }
+
+    public function updateBackupSettings(Request $request): RedirectResponse
+    {
+        $this->authorizeAdmin($request->user());
+
+        $validated = $request->validate([
+            'schedule' => ['required', 'string', 'in:disabled,daily,weekly,monthly'],
+            'retention_days' => ['nullable', 'integer', 'min:1', 'max:3650'],
+        ]);
+
+        \App\Models\Setting::setGroup('backups', [
+            'schedule' => $validated['schedule'],
+            'retention_days' => $validated['retention_days'] ?? null,
+        ]);
+
+        $this->auditSettingsChange($request, 'settings.backups.update', [
+            'schedule' => $validated['schedule'],
+            'retention_days' => $validated['retention_days'] ?? null,
+        ]);
+
+        return redirect()->back()->with('message', __('messages.backup_settings_saved'));
     }
 
     public function listBackups(Request $request, BackupService $service): JsonResponse

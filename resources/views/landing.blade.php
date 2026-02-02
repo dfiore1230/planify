@@ -600,7 +600,7 @@
                     @php
                         $globalList = app(\App\Services\Email\EmailListService::class)->getGlobalList();
                     @endphp
-                    <div class="flex w-full max-w-xl flex-col items-center gap-3 rounded-2xl bg-slate-900/70 px-4 py-3 sm:flex-row sm:gap-4 sm:px-5 sm:py-4">
+                    <div class="flex w-full max-w-xl flex-col items-center justify-center gap-3 rounded-2xl bg-slate-900/70 px-4 py-3 sm:flex-row sm:gap-4 sm:px-5 sm:py-4">
                         <button type="button"
                                 id="open-landing-subscribe-modal"
                                 class="inline-flex w-full items-center justify-center gap-2 rounded-md bg-white px-5 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto">

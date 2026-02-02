@@ -236,6 +236,7 @@ Route::middleware(['auth', 'verified', 'active'])->group(function ()
         Route::post('/email-templates/{template}/test', [SettingsController::class, 'testMailTemplate'])->name('mail_templates.test');
         Route::get('/backups/list', [SettingsController::class, 'listBackups'])->name('backups.list');
         Route::post('/backups', [SettingsController::class, 'createBackup'])->name('backups.create');
+        Route::post('/backups/settings', [SettingsController::class, 'updateBackupSettings'])->name('backups.settings');
         Route::post('/backups/restore', [SettingsController::class, 'restoreBackup'])->name('backups.restore');
         Route::get('/backups/{filename}', [SettingsController::class, 'downloadBackup'])->name('backups.download');
 

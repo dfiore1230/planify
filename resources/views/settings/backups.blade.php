@@ -27,6 +27,53 @@
                         </header>
 
                         <div class="mt-6 space-y-6">
+                            <div class="rounded-md border border-gray-200 bg-gray-50 p-4 dark:border-gray-700 dark:bg-gray-900">
+                                <h3 class="text-sm font-semibold text-gray-900 dark:text-gray-100">
+                                    {{ __('messages.backup_schedule_heading') }}
+                                </h3>
+                                <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
+                                    {{ __('messages.backup_schedule_description') }}
+                                </p>
+
+                                <form method="POST" action="{{ route('settings.backups.settings') }}" class="mt-4 grid gap-4 sm:grid-cols-3">
+                                    @csrf
+                                    <div>
+                                        <x-input-label for="backup_schedule" :value="__('messages.backup_schedule_label')" />
+                                        <select id="backup_schedule"
+                                                name="schedule"
+                                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4E81FA] focus:ring-[#4E81FA] dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200">
+                                            @php
+                                                $schedule = $backupSettings['schedule'] ?? 'disabled';
+                                            @endphp
+                                            <option value="disabled" @selected($schedule === 'disabled')>{{ __('messages.backup_schedule_disabled') }}</option>
+                                            <option value="daily" @selected($schedule === 'daily')>{{ __('messages.backup_schedule_daily') }}</option>
+                                            <option value="weekly" @selected($schedule === 'weekly')>{{ __('messages.backup_schedule_weekly') }}</option>
+                                            <option value="monthly" @selected($schedule === 'monthly')>{{ __('messages.backup_schedule_monthly') }}</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <x-input-label for="backup_retention_days" :value="__('messages.backup_retention_label')" />
+                                        <input id="backup_retention_days"
+                                               name="retention_days"
+                                               type="number"
+                                               min="1"
+                                               max="3650"
+                                               value="{{ old('retention_days', $backupSettings['retention_days'] ?? '') }}"
+                                               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4E81FA] focus:ring-[#4E81FA] dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200"
+                                               placeholder="{{ __('messages.backup_retention_placeholder') }}">
+                                    </div>
+                                    <div class="flex items-end">
+                                        <x-primary-button type="submit">
+                                            {{ __('messages.save') }}
+                                        </x-primary-button>
+                                    </div>
+                                </form>
+
+                                @if (session('message'))
+                                    <p class="mt-3 text-sm text-green-600">{{ session('message') }}</p>
+                                @endif
+                            </div>
+
                             <div class="flex flex-wrap items-center gap-3">
                                 <x-primary-button type="button" x-on:click="createBackup" x-bind:disabled="loading">
                                     <span x-text="loading ? '{{ __('messages.backup_creating') }}' : '{{ __('messages.backup_create') }}'"></span>

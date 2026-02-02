@@ -861,4 +861,15 @@ return [
     'comment_deleted' => 'Comment deleted.',
     'reject_comment' => 'Reject comment',
     'delete_comment' => 'Delete comment',
+
+    'backup_schedule_heading' => 'Backup schedule',
+    'backup_schedule_description' => 'Automatically create backups on a schedule and apply a retention period.',
+    'backup_schedule_label' => 'Schedule',
+    'backup_schedule_disabled' => 'Disabled',
+    'backup_schedule_daily' => 'Daily (2:00 AM)',
+    'backup_schedule_weekly' => 'Weekly (Sunday 2:00 AM)',
+    'backup_schedule_monthly' => 'Monthly (1st day 2:00 AM)',
+    'backup_retention_label' => 'Retention (days)',
+    'backup_retention_placeholder' => 'Leave blank to keep all backups',
+    'backup_settings_saved' => 'Backup settings saved.',
 ];
