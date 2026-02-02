@@ -160,9 +160,11 @@ class PublicEmailSubscriptionController extends Controller
     {
         $ttlMinutes = (int) config('mass_email.confirmation_token_ttl_minutes', 10080);
 
-        return URL::temporarySignedRoute('public.confirm', now()->addMinutes($ttlMinutes), [
+        $relative = URL::temporarySignedRoute('public.confirm', now()->addMinutes($ttlMinutes), [
             'subscriber' => $subscriber->getKey(),
             'list' => $list->getKey(),
         ], false);
+
+        return URL::to($relative);
     }
 }

@@ -304,6 +304,19 @@ class MailTemplateManager
                 'order_reference' => '12345',
                 'app_name' => $appName,
             ],
+            'confirm_subscription' => [
+                'list_name' => 'Sample Mailing List',
+                'confirm_url' => $baseUrl . '/public/confirm?subscriber=1&list=1',
+                'app_name' => $appName,
+            ],
+            'event_comment_pending' => [
+                'event_name' => 'Sample Event',
+                'comment_author' => 'Taylor Example',
+                'comment_preview' => 'Loved this event and shared photos!',
+                'photo_url' => $baseUrl . '/photos/sample',
+                'review_url' => $baseUrl . '/events/sample-event/view',
+                'app_name' => $appName,
+            ],
             default => [],
         };
     }

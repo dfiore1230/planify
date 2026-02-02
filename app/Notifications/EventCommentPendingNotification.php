@@ -5,6 +5,7 @@ namespace App\Notifications;
 use App\Models\Event;
 use App\Models\EventComment;
 use App\Models\Role;
+use App\Support\EventMailTemplateManager;
 use App\Support\MailConfigManager;
 use App\Utils\NotificationUtils;
 use App\Utils\UrlUtils;
@@ -37,7 +38,9 @@ class EventCommentPendingNotification extends Notification
             return [];
         }
 
-        return ['mail'];
+        $templates = EventMailTemplateManager::forEvent($this->event);
+
+        return $templates->enabled($this->templateKey()) ? ['mail'] : [];
     }
 
     public function toMail(object $notifiable): MailMessage
@@ -52,19 +55,24 @@ class EventCommentPendingNotification extends Notification
             $reviewUrl = url('/events/' . $eventHash . '/view');
         }
         $commentPreview = Str::limit($this->comment->body, 160);
+        $templates = EventMailTemplateManager::forEvent($this->event);
+        $templateKey = $this->templateKey();
+        $data = [
+            'event_name' => $eventName,
+            'comment_author' => $this->comment->author_name,
+            'comment_preview' => $commentPreview,
+            'photo_url' => $this->comment->photo_url ?? '',
+            'review_url' => $reviewUrl,
+            'app_name' => config('app.name'),
+        ];
 
-        $mail = (new MailMessage())
-            ->subject(__('messages.event_comment_pending_subject', ['event' => $eventName]))
-            ->line(__('messages.event_comment_pending_intro', ['event' => $eventName]))
-            ->line(__('messages.event_comment_pending_from', ['name' => $this->comment->author_name]))
-            ->line($commentPreview)
-            ->action(__('messages.review_comments'), $reviewUrl);
+        $subject = $templates->renderSubject($templateKey, $data)
+            ?: __('messages.event_comment_pending_subject', ['event' => $eventName]);
+        $body = $templates->renderBody($templateKey, $data);
 
-        if ($this->comment->photo_url) {
-            $mail->line(__('messages.event_comment_pending_photo', ['url' => $this->comment->photo_url]));
-        }
-
-        return $mail;
+        return (new MailMessage())
+            ->subject($subject)
+            ->markdown('mail.templates.generic', ['body' => $body]);
     }
 
     public function toArray(object $notifiable): array
@@ -86,5 +94,10 @@ class EventCommentPendingNotification extends Notification
             'List-Unsubscribe' => '<' . route('role.unsubscribe', ['subdomain' => $subdomain]) . '>',
             'List-Unsubscribe-Post' => 'List-Unsubscribe=One-Click',
         ];
+    }
+
+    protected function templateKey(): string
+    {
+        return 'event_comment_pending';
     }
 }

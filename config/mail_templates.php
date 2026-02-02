@@ -260,6 +260,58 @@ MD,
                 ':app_name' => 'The application name configured in settings.',
             ],
         ],
+        'confirm_subscription' => [
+            'label' => 'Email subscription confirmation',
+            'description' => 'Sent to subscribers to confirm they want to receive emails.',
+            'enabled' => true,
+            'subject' => 'Confirm your subscription',
+            'body' => <<<'MD'
+# Hello!
+
+Please confirm your subscription to **:list_name** by clicking the link below:
+
+:confirm_url
+
+If you did not request this, you can ignore this email.
+
+Thanks,
+:app_name
+MD,
+            'placeholders' => [
+                ':list_name' => 'Name of the email list or event list.',
+                ':confirm_url' => 'Confirmation link for the subscriber.',
+                ':app_name' => 'The application name configured in settings.',
+            ],
+        ],
+        'event_comment_pending' => [
+            'label' => 'Event comment pending approval',
+            'description' => 'Sent to admins when a new event comment is awaiting approval.',
+            'enabled' => true,
+            'subject' => 'New comment pending approval for :event_name',
+            'body' => <<<'MD'
+# Hello!
+
+A new comment was submitted for **:event_name** and needs approval.
+
+**From:** :comment_author  
+**Comment:** :comment_preview
+
+:photo_url
+
+[Review Comment](:review_url)
+
+Thanks,
+:app_name
+MD,
+            'placeholders' => [
+                ':event_name' => 'Name of the event.',
+                ':comment_author' => 'Name of the comment author.',
+                ':comment_preview' => 'Short preview of the comment body.',
+                ':photo_url' => 'Optional photo URL provided with the comment.',
+                ':review_url' => 'Admin link to review and approve the comment.',
+                ':app_name' => 'The application name configured in settings.',
+            ],
+        ],
 
         'event_deleted_talent' => [
             'label' => 'Event deleted (talent)',

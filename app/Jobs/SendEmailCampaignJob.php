@@ -325,21 +325,25 @@ class SendEmailCampaignJob implements ShouldQueue
     {
         $ttlMinutes = (int) config('mass_email.unsubscribe_token_ttl_minutes', 525600);
 
-        return URL::temporarySignedRoute('public.unsubscribe', now()->addMinutes($ttlMinutes), [
+        $relative = URL::temporarySignedRoute('public.unsubscribe', now()->addMinutes($ttlMinutes), [
             'subscriber' => $subscriberId,
             'list' => $listId,
             'scope' => 'list',
         ], false);
+
+        return URL::to($relative);
     }
 
     private function buildUnsubscribeAllUrl(int $subscriberId): string
     {
         $ttlMinutes = (int) config('mass_email.unsubscribe_token_ttl_minutes', 525600);
 
-        return URL::temporarySignedRoute('public.unsubscribe', now()->addMinutes($ttlMinutes), [
+        $relative = URL::temporarySignedRoute('public.unsubscribe', now()->addMinutes($ttlMinutes), [
             'subscriber' => $subscriberId,
             'scope' => 'all',
         ], false);
+
+        return URL::to($relative);
     }
 
     private function ensureUnsubscribeFooter(

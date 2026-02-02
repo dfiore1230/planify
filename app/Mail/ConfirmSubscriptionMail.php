@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Support\MailTemplateManager;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
@@ -20,26 +21,29 @@ class ConfirmSubscriptionMail extends Mailable
 
     public function envelope(): Envelope
     {
-        return new Envelope(
-            subject: 'Confirm your subscription'
-        );
+        $templates = app(MailTemplateManager::class);
+        $data = $this->templateData();
+
+        return new Envelope(subject: $templates->renderSubject('confirm_subscription', $data));
     }
 
     public function content(): Content
     {
-        $body = <<<BODY
-Hello,
-
-Please confirm your subscription to {$this->listName} by clicking the link below:
-
-{$this->confirmUrl}
-
-If you did not request this, you can ignore this email.
-BODY;
+        $templates = app(MailTemplateManager::class);
+        $body = $templates->renderBody('confirm_subscription', $this->templateData());
 
         return new Content(
             markdown: 'mail.templates.generic',
-            with: ['body' => nl2br(e($body))]
+            with: ['body' => $body]
         );
+    }
+
+    private function templateData(): array
+    {
+        return [
+            'confirm_url' => $this->confirmUrl,
+            'list_name' => $this->listName,
+            'app_name' => config('app.name'),
+        ];
     }
 }
