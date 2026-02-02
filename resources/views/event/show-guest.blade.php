@@ -248,12 +248,21 @@
               <p class="text-sm font-semibold uppercase tracking-widest text-indigo-500">Stay updated</p>
               <h3 class="text-2xl font-semibold text-gray-900">Get event email updates</h3>
               <p class="text-sm text-gray-600">Join the mailing list for schedule updates and announcements.</p>
-              <a href="{{ route('public.subscribe.event', ['hash' => \App\Utils\UrlUtils::encodeId($event->id)]) }}"
-                 class="inline-flex w-fit items-center rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-700">
-                Subscribe
-              </a>
+              @if (!auth()->check())
+                <button type="button"
+                        id="open-subscribe-modal"
+                        class="inline-flex w-fit items-center rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-700">
+                  Join mailing list
+                </button>
+              @else
+                <a href="{{ route('public.subscribe.event', ['hash' => \App\Utils\UrlUtils::encodeId($event->id)]) }}"
+                   class="inline-flex w-fit items-center rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-700">
+                  Subscribe
+                </a>
+              @endif
             </div>
           </div>
+
 
           @if ($event->flyer_image_url)
             <div class="bg-[#F5F9FE] dark:bg-gray-800 rounded-lg px-5 py-8 sm:p-8 mb-6 flex justify-center">
@@ -314,6 +323,7 @@
                          name="author_email"
                          type="email"
                          value="{{ old('author_email', auth()->user()?->email) }}"
+                         required
                          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4E81FA] focus:ring-[#4E81FA] dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200">
                 </div>
               </div>
@@ -758,6 +768,60 @@
     @endif
   </main>
 
+  @if (!auth()->check())
+    <div id="subscribe-modal"
+         class="fixed inset-0 z-50 hidden items-center justify-center bg-black/40 px-4">
+      <div class="w-full max-w-lg rounded-xl bg-white p-6 shadow-xl">
+        <div class="flex items-center justify-between">
+          <h3 class="text-xl font-semibold text-gray-900">Join the mailing list</h3>
+          <button type="button" id="close-subscribe-modal" class="text-gray-400 hover:text-gray-600">
+            ✕
+          </button>
+        </div>
+        <p class="mt-2 text-sm text-gray-600">Get schedule updates and announcements for this event.</p>
+        <form method="POST" action="{{ route('public.subscribe') }}" class="mt-6 space-y-4" data-subscribe-form>
+          @csrf
+          <input type="hidden" name="event_id" value="{{ \App\Utils\UrlUtils::encodeId($event->id) }}">
+          <div data-subscribe-success class="{{ session('subscription_status') ? '' : 'hidden' }} rounded-lg border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-700">
+            Check your email to verify your subscription.
+          </div>
+          <div>
+            <label for="subscribe_email" class="block text-sm font-medium text-gray-700">Email</label>
+            <input id="subscribe_email"
+                   name="email"
+                   type="email"
+                   required
+                   class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4E81FA] focus:ring-[#4E81FA]">
+          </div>
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <label for="subscribe_first_name" class="block text-sm font-medium text-gray-700">First name</label>
+              <input id="subscribe_first_name"
+                     name="first_name"
+                     type="text"
+                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4E81FA] focus:ring-[#4E81FA]">
+            </div>
+            <div>
+              <label for="subscribe_last_name" class="block text-sm font-medium text-gray-700">Last name</label>
+              <input id="subscribe_last_name"
+                     name="last_name"
+                     type="text"
+                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4E81FA] focus:ring-[#4E81FA]">
+            </div>
+          </div>
+          <div class="flex flex-wrap items-center justify-end gap-3 pt-2">
+            <button type="button" id="cancel-subscribe-modal" class="rounded-md border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-50">
+              Cancel
+            </button>
+            <button type="submit" class="rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  @endif
+
   <script>
     function clearVideos(url) {
       if (confirm('{{ __("messages.are_you_sure_clear_videos") }}')) {
@@ -766,6 +830,43 @@
     }
 
     document.addEventListener('DOMContentLoaded', function () {
+      const openSubscribeModal = document.getElementById('open-subscribe-modal');
+      const subscribeModal = document.getElementById('subscribe-modal');
+      const closeSubscribeModal = document.getElementById('close-subscribe-modal');
+      const cancelSubscribeModal = document.getElementById('cancel-subscribe-modal');
+
+      function toggleSubscribeModal(show) {
+        if (!subscribeModal) return;
+        subscribeModal.classList.toggle('hidden', !show);
+        subscribeModal.classList.toggle('flex', show);
+      }
+
+      if (openSubscribeModal) {
+        openSubscribeModal.addEventListener('click', () => toggleSubscribeModal(true));
+      }
+
+      if (closeSubscribeModal) {
+        closeSubscribeModal.addEventListener('click', () => toggleSubscribeModal(false));
+      }
+
+      if (cancelSubscribeModal) {
+        cancelSubscribeModal.addEventListener('click', () => toggleSubscribeModal(false));
+      }
+
+      if (subscribeModal) {
+        subscribeModal.addEventListener('click', (event) => {
+          if (event.target === subscribeModal) {
+            toggleSubscribeModal(false);
+          }
+        });
+      }
+
+      const subscribeSuccess = subscribeModal?.querySelector('[data-subscribe-success]');
+      if (subscribeSuccess && !subscribeSuccess.classList.contains('hidden')) {
+        toggleSubscribeModal(true);
+        setTimeout(() => toggleSubscribeModal(false), 5000);
+      }
+
       const shareButton = document.getElementById('share-event-button');
 
       if (!shareButton) {

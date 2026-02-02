@@ -312,6 +312,57 @@ MD,
                 ':app_name' => 'The application name configured in settings.',
             ],
         ],
+        'event_comment_submitted' => [
+            'label' => 'Event comment submission receipt',
+            'description' => 'Sent to commenters to confirm their comment was received.',
+            'enabled' => true,
+            'subject' => 'We received your comment for :event_name',
+            'body' => <<<'MD'
+# Hello!
+
+Thanks for leaving a comment on **:event_name**. Your comment is pending approval.
+
+**Comment:** :comment_body
+
+:photo_url
+
+Thanks,
+:app_name
+MD,
+            'placeholders' => [
+                ':event_name' => 'Name of the event.',
+                ':comment_body' => 'Full comment body submitted.',
+                ':photo_url' => 'Optional photo URL provided with the comment.',
+                ':app_name' => 'The application name configured in settings.',
+            ],
+        ],
+        'event_comment_approved' => [
+            'label' => 'Event comment approved',
+            'description' => 'Sent to commenters when their comment is approved.',
+            'enabled' => true,
+            'subject' => 'Your comment for :event_name has been approved',
+            'body' => <<<'MD'
+# Hello!
+
+Good news—your comment on **:event_name** has been approved and is now visible.
+
+**Comment:** :comment_body
+
+:photo_url
+
+[View Event](:event_url)
+
+Thanks,
+:app_name
+MD,
+            'placeholders' => [
+                ':event_name' => 'Name of the event.',
+                ':comment_body' => 'Full comment body submitted.',
+                ':photo_url' => 'Optional photo URL provided with the comment.',
+                ':event_url' => 'Public link to view the event.',
+                ':app_name' => 'The application name configured in settings.',
+            ],
+        ],
 
         'event_deleted_talent' => [
             'label' => 'Event deleted (talent)',

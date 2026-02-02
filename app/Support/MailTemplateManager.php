@@ -317,6 +317,19 @@ class MailTemplateManager
                 'review_url' => $baseUrl . '/events/sample-event/view',
                 'app_name' => $appName,
             ],
+            'event_comment_submitted' => [
+                'event_name' => 'Sample Event',
+                'comment_body' => 'Really enjoyed the show and posted photos.',
+                'photo_url' => $baseUrl . '/photos/sample',
+                'app_name' => $appName,
+            ],
+            'event_comment_approved' => [
+                'event_name' => 'Sample Event',
+                'comment_body' => 'Really enjoyed the show and posted photos.',
+                'photo_url' => $baseUrl . '/photos/sample',
+                'event_url' => $baseUrl . '/events/sample-event',
+                'app_name' => $appName,
+            ],
             default => [],
         };
     }

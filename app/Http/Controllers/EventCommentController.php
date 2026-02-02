@@ -6,6 +6,8 @@ use App\Models\Event;
 use App\Models\EventComment;
 use App\Models\Role;
 use App\Notifications\EventCommentPendingNotification;
+use App\Notifications\EventCommentApprovedNotification;
+use App\Notifications\EventCommentSubmittedNotification;
 use App\Utils\NotificationUtils;
 use App\Utils\UrlUtils;
 use Illuminate\Http\Request;
@@ -35,13 +37,13 @@ class EventCommentController extends Controller
 
         $validated = $request->validate([
             'author_name' => ['required', 'string', 'max:100'],
-            'author_email' => ['nullable', 'email', 'max:255'],
+            'author_email' => ['required', 'email', 'max:255'],
             'body' => ['required', 'string', 'max:2000'],
             'photo_url' => ['nullable', 'url', 'max:2000'],
         ]);
 
         $user = $request->user();
-        $authorEmail = $validated['author_email'] ?? $user?->email;
+        $authorEmail = $validated['author_email'];
 
         $comment = EventComment::create([
             'event_id' => $event->id,
@@ -51,6 +53,9 @@ class EventCommentController extends Controller
             'body' => $validated['body'],
             'photo_url' => $validated['photo_url'] ?? null,
         ]);
+
+        Notification::route('mail', $comment->author_email)
+            ->notify(new EventCommentSubmittedNotification($comment, $event));
 
         $recipients = NotificationUtils::organizerUsers($event);
 
@@ -83,6 +88,9 @@ class EventCommentController extends Controller
         $comment->approved_at = now();
         $comment->approved_by_user_id = $user->id;
         $comment->save();
+
+        Notification::route('mail', $comment->author_email)
+            ->notify(new EventCommentApprovedNotification($comment, $event));
 
         return redirect()->back()->with('message', __('messages.comment_approved'));
     }
