@@ -1,4 +1,16 @@
 # =========================
+# Stage: assets (node build)
+# =========================
+FROM node:20-alpine AS assets
+WORKDIR /var/www/html
+COPY package.json package-lock.json ./
+COPY postcss.config.js tailwind.config.js vite.config.js ./
+COPY resources ./resources
+COPY public ./public
+RUN npm ci
+RUN npm run build
+
+# =========================
 # Stage: app (php-fpm + code)
 # =========================
 FROM php:8.3-fpm-alpine AS app
@@ -8,8 +20,7 @@ RUN apk add --no-cache \
     bash git curl ca-certificates busybox-extras \
     libpng-dev libjpeg-turbo-dev freetype-dev zlib-dev \
     oniguruma-dev libxml2-dev icu-dev \
-    libzip-dev zip unzip \
-    nodejs npm
+    libzip-dev zip unzip
 
 # PHP extensions (incl. gd w/ jpeg + freetype)
 RUN docker-php-ext-configure gd --with-jpeg --with-freetype \
@@ -55,9 +66,8 @@ RUN mkdir -p bootstrap/cache storage/framework/cache \
 RUN composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader \
  && mv .env.dockerbuild .env
 
-# Frontend build (tolerant)
-RUN [ -f package-lock.json ] && npm ci || true
-RUN [ -f package.json ] && npm run build || true
+# Frontend build artifacts are copied from the assets stage.
+COPY --from=assets /var/www/html/public/build /var/www/html/public/build
 
 # Laravel perms + storage symlink
 RUN mkdir -p storage bootstrap/cache \
