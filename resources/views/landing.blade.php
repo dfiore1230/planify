@@ -98,6 +98,14 @@
         ? 'justify-center'
         : 'justify-start md:justify-start';
 @endphp
+@php
+    $heroAlignment = $heroAlignment ?? \App\Support\HomePageSettings::HERO_ALIGN_CENTER;
+    $heroContainerClass = $heroContainerClass ?? 'flex flex-col items-center gap-6 text-center';
+    $heroTextContainerClass = $heroTextContainerClass ?? 'flex flex-col items-center gap-4 max-w-3xl';
+    $heroLogoWrapperClass = $heroLogoWrapperClass ?? 'flex justify-center';
+    $heroBodyClass = $heroBodyClass ?? 'mt-2 text-lg sm:text-xl text-slate-200 leading-relaxed space-y-4 text-center';
+    $heroCtaAlignmentClass = $heroCtaAlignmentClass ?? 'justify-center';
+@endphp
 
 <x-app-layout :title="__('messages.events')">
     <div class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
@@ -601,12 +609,12 @@
                         $globalList = app(\App\Services\Email\EmailListService::class)->getGlobalList();
                     @endphp
                     <div class="inline-flex items-center justify-center rounded-2xl bg-slate-900/70 px-3 py-2">
-                        <button type="button"
-                                id="open-landing-subscribe-tab"
-                                data-subscribe-url="{{ route('public.subscribe.form') }}"
-                                class="inline-flex items-center justify-center gap-2 rounded-md bg-white px-5 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                        <a href="{{ route('public.subscribe.form') }}"
+                           target="_blank"
+                           rel="noopener"
+                           class="inline-flex items-center justify-center gap-2 rounded-md bg-white px-5 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
                             Join the mailing list
-                        </button>
+                        </a>
                     </div>
 
                     @if($loginCta)
@@ -622,18 +630,3 @@
         </footer>
     </x-slot>
 </x-app-layout>
-
-@push('scripts')
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const openTabButton = document.getElementById('open-landing-subscribe-tab');
-    if (!openTabButton) return;
-
-    openTabButton.addEventListener('click', () => {
-        const subscribeUrl = openTabButton.getAttribute('data-subscribe-url');
-        if (!subscribeUrl) return;
-        window.open(subscribeUrl, '_blank', 'noopener');
-    });
-});
-</script>
-@endpush
