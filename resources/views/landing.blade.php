@@ -602,7 +602,8 @@
                     @endphp
                     <div class="inline-flex items-center justify-center rounded-2xl bg-slate-900/70 px-3 py-2">
                         <button type="button"
-                                id="open-landing-subscribe-modal"
+                                id="open-landing-subscribe-tab"
+                                data-subscribe-url="{{ route('public.subscribe.form') }}"
                                 class="inline-flex items-center justify-center gap-2 rounded-md bg-white px-5 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
                             Join the mailing list
                         </button>
@@ -620,102 +621,19 @@
             @endif
         </footer>
     </x-slot>
-
-    <div id="landing-subscribe-modal"
-         class="fixed inset-0 z-50 hidden items-center justify-center bg-black/40 px-4">
-        <div class="w-full max-w-lg rounded-xl bg-white p-6 shadow-xl">
-            <div class="flex items-center justify-between">
-                <h3 class="text-xl font-semibold text-gray-900">Join the mailing list</h3>
-                <button type="button" id="close-landing-subscribe-modal" class="text-gray-400 hover:text-gray-600">
-                    ✕
-                </button>
-            </div>
-            <p class="mt-2 text-sm text-gray-600">Get announcements and platform updates.</p>
-            @php
-                $globalList = $globalList ?? app(\App\Services\Email\EmailListService::class)->getGlobalList();
-            @endphp
-            <form method="POST" action="{{ route('public.subscribe') }}" class="mt-6 space-y-4">
-                @csrf
-                <input type="hidden" name="list_id" value="{{ $globalList->id }}">
-                <div data-landing-subscribe-success class="{{ session('subscription_status') ? '' : 'hidden' }} rounded-lg border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-700">
-                    Check your email to verify your subscription.
-                </div>
-                <div>
-                    <label for="landing-subscribe-email" class="block text-sm font-medium text-gray-700">Email</label>
-                    <input id="landing-subscribe-email"
-                           name="email"
-                           type="email"
-                           required
-                           class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4E81FA] focus:ring-[#4E81FA]">
-                </div>
-                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    <div>
-                        <label for="landing-subscribe-first-name" class="block text-sm font-medium text-gray-700">First name</label>
-                        <input id="landing-subscribe-first-name"
-                               name="first_name"
-                               type="text"
-                               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4E81FA] focus:ring-[#4E81FA]">
-                    </div>
-                    <div>
-                        <label for="landing-subscribe-last-name" class="block text-sm font-medium text-gray-700">Last name</label>
-                        <input id="landing-subscribe-last-name"
-                               name="last_name"
-                               type="text"
-                               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4E81FA] focus:ring-[#4E81FA]">
-                    </div>
-                </div>
-                <div class="flex flex-wrap items-center justify-end gap-3 pt-2">
-                    <button type="button" id="cancel-landing-subscribe-modal" class="rounded-md border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-50">
-                        Cancel
-                    </button>
-                    <button type="submit" class="rounded-md bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm ring-1 ring-inset ring-slate-200 hover:bg-slate-100">
-                        Submit
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
 </x-app-layout>
 
 @push('scripts')
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-    const openModal = document.getElementById('open-landing-subscribe-modal');
-    const modal = document.getElementById('landing-subscribe-modal');
-    const closeModal = document.getElementById('close-landing-subscribe-modal');
-    const cancelModal = document.getElementById('cancel-landing-subscribe-modal');
-    const successBox = modal?.querySelector('[data-landing-subscribe-success]');
+    const openTabButton = document.getElementById('open-landing-subscribe-tab');
+    if (!openTabButton) return;
 
-    function toggleModal(show) {
-        if (!modal) return;
-        modal.classList.toggle('hidden', !show);
-        modal.classList.toggle('flex', show);
-    }
-
-    if (openModal) {
-        openModal.addEventListener('click', () => toggleModal(true));
-    }
-
-    if (closeModal) {
-        closeModal.addEventListener('click', () => toggleModal(false));
-    }
-
-    if (cancelModal) {
-        cancelModal.addEventListener('click', () => toggleModal(false));
-    }
-
-    if (modal) {
-        modal.addEventListener('click', (event) => {
-            if (event.target === modal) {
-                toggleModal(false);
-            }
-        });
-    }
-
-    if (successBox && !successBox.classList.contains('hidden')) {
-        toggleModal(true);
-        setTimeout(() => toggleModal(false), 5000);
-    }
+    openTabButton.addEventListener('click', () => {
+        const subscribeUrl = openTabButton.getAttribute('data-subscribe-url');
+        if (!subscribeUrl) return;
+        window.open(subscribeUrl, '_blank', 'noopener');
+    });
 });
 </script>
 @endpush

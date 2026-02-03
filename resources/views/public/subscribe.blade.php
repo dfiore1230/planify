@@ -20,6 +20,12 @@
                             <input type="hidden" name="event_id" value="{{ \App\Utils\UrlUtils::encodeId($event->id) }}">
                         @endif
 
+                        @if (session('subscription_status'))
+                            <div class="rounded-lg border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-700" data-subscription-success>
+                                {{ session('subscription_status') }}
+                            </div>
+                        @endif
+
                         <div class="grid gap-6 sm:grid-cols-2">
                             <div>
                                 <label class="block text-sm font-medium text-gray-700" for="first_name">First name</label>
@@ -50,3 +56,16 @@
         </div>
     </div>
 </x-app-layout>
+
+@push('scripts')
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const successBox = document.querySelector('[data-subscription-success]');
+    if (!successBox) return;
+
+    setTimeout(() => {
+        window.close();
+    }, 5000);
+});
+</script>
+@endpush

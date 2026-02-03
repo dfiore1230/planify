@@ -250,12 +250,15 @@
               <p class="text-sm text-gray-600">Join the mailing list for schedule updates and announcements.</p>
               @if (!auth()->check())
                 <button type="button"
-                        id="open-subscribe-modal"
+                        id="open-subscribe-tab"
+                        data-subscribe-url="{{ route('public.subscribe.event', ['hash' => \App\Utils\UrlUtils::encodeId($event->id)]) }}"
                         class="inline-flex w-fit items-center rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-700">
                   Join mailing list
                 </button>
               @else
                 <a href="{{ route('public.subscribe.event', ['hash' => \App\Utils\UrlUtils::encodeId($event->id)]) }}"
+                   target="_blank"
+                   rel="noopener"
                    class="inline-flex w-fit items-center rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-700">
                   Subscribe
                 </a>
@@ -768,60 +771,6 @@
     @endif
   </main>
 
-  @if (!auth()->check())
-    <div id="subscribe-modal"
-         class="fixed inset-0 z-50 hidden items-center justify-center bg-black/40 px-4">
-      <div class="w-full max-w-lg rounded-xl bg-white p-6 shadow-xl">
-        <div class="flex items-center justify-between">
-          <h3 class="text-xl font-semibold text-gray-900">Join the mailing list</h3>
-          <button type="button" id="close-subscribe-modal" class="text-gray-400 hover:text-gray-600">
-            ✕
-          </button>
-        </div>
-        <p class="mt-2 text-sm text-gray-600">Get schedule updates and announcements for this event.</p>
-        <form method="POST" action="{{ route('public.subscribe') }}" class="mt-6 space-y-4" data-subscribe-form>
-          @csrf
-          <input type="hidden" name="event_id" value="{{ \App\Utils\UrlUtils::encodeId($event->id) }}">
-          <div data-subscribe-success class="{{ session('subscription_status') ? '' : 'hidden' }} rounded-lg border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-700">
-            Check your email to verify your subscription.
-          </div>
-          <div>
-            <label for="subscribe_email" class="block text-sm font-medium text-gray-700">Email</label>
-            <input id="subscribe_email"
-                   name="email"
-                   type="email"
-                   required
-                   class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4E81FA] focus:ring-[#4E81FA]">
-          </div>
-          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <div>
-              <label for="subscribe_first_name" class="block text-sm font-medium text-gray-700">First name</label>
-              <input id="subscribe_first_name"
-                     name="first_name"
-                     type="text"
-                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4E81FA] focus:ring-[#4E81FA]">
-            </div>
-            <div>
-              <label for="subscribe_last_name" class="block text-sm font-medium text-gray-700">Last name</label>
-              <input id="subscribe_last_name"
-                     name="last_name"
-                     type="text"
-                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4E81FA] focus:ring-[#4E81FA]">
-            </div>
-          </div>
-          <div class="flex flex-wrap items-center justify-end gap-3 pt-2">
-            <button type="button" id="cancel-subscribe-modal" class="rounded-md border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-50">
-              Cancel
-            </button>
-            <button type="submit" class="rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700">
-              Submit
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  @endif
-
   <script>
     function clearVideos(url) {
       if (confirm('{{ __("messages.are_you_sure_clear_videos") }}')) {
@@ -830,41 +779,13 @@
     }
 
     document.addEventListener('DOMContentLoaded', function () {
-      const openSubscribeModal = document.getElementById('open-subscribe-modal');
-      const subscribeModal = document.getElementById('subscribe-modal');
-      const closeSubscribeModal = document.getElementById('close-subscribe-modal');
-      const cancelSubscribeModal = document.getElementById('cancel-subscribe-modal');
-
-      function toggleSubscribeModal(show) {
-        if (!subscribeModal) return;
-        subscribeModal.classList.toggle('hidden', !show);
-        subscribeModal.classList.toggle('flex', show);
-      }
-
-      if (openSubscribeModal) {
-        openSubscribeModal.addEventListener('click', () => toggleSubscribeModal(true));
-      }
-
-      if (closeSubscribeModal) {
-        closeSubscribeModal.addEventListener('click', () => toggleSubscribeModal(false));
-      }
-
-      if (cancelSubscribeModal) {
-        cancelSubscribeModal.addEventListener('click', () => toggleSubscribeModal(false));
-      }
-
-      if (subscribeModal) {
-        subscribeModal.addEventListener('click', (event) => {
-          if (event.target === subscribeModal) {
-            toggleSubscribeModal(false);
-          }
+      const openSubscribeTab = document.getElementById('open-subscribe-tab');
+      if (openSubscribeTab) {
+        openSubscribeTab.addEventListener('click', () => {
+          const subscribeUrl = openSubscribeTab.getAttribute('data-subscribe-url');
+          if (!subscribeUrl) return;
+          window.open(subscribeUrl, '_blank', 'noopener');
         });
-      }
-
-      const subscribeSuccess = subscribeModal?.querySelector('[data-subscribe-success]');
-      if (subscribeSuccess && !subscribeSuccess.classList.contains('hidden')) {
-        toggleSubscribeModal(true);
-        setTimeout(() => toggleSubscribeModal(false), 5000);
       }
 
       const shareButton = document.getElementById('share-event-button');
